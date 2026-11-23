@@ -5,7 +5,8 @@ One shared library of reel **looks** (how a reel looks) and **formats** (how it'
 - **instagram-edits**: Claude builds an *editable* project inside Instagram's Edits app on your Mac.
 - **Claude Video Editor** (`/video-editor`): Claude renders a *finished* 9:16 MP4 from your talking-head take.
 
-Same looks, same numbers, same code. Pick one by its name in either skill: "edit this in the Codie Sanchez look",
+Same looks, same numbers. The Video Editor renders them from the code here; instagram-edits builds them with Edits'
+own tools. Pick one by its name in either skill: "edit this in the Codie Sanchez look",
 "use the pop-up proof format".
 
 **See every look and format moving:** https://claude.ai/artifact/N46Gep95Kujh6TWQyV2y2r
@@ -27,7 +28,7 @@ index.json          every look and format: gallery name, other names people use,
 looks/<slug>/       one folder per look
 formats/<slug>/     one folder per format
   SPEC.md           every number: palette, type sizes and positions, motion timings, sound levels, grade
-  USE.md            how each skill uses it (Edits route = overlay + Edits' own moves; Video Editor route = finished MP4)
+  USE.md            how each skill uses it (Edits route = built natively with Edits' own tools; Video Editor route = finished MP4)
   card.json         the gallery card (title, one-liner, palette, fonts, references)
   cut.py, build.py  the HyperFrames code (plus whatever helpers that look needs)
   config file       reel.json / config.json / plan.json: example values only, filled per take

@@ -99,7 +99,7 @@
     "emoji",
     "callout"
    ],
-   "edits_quick_recipe": null
+   "edits_quick_recipe": "styles/hormozi-2026.md"
   },
   {
    "slug": "codie-sanchez",
@@ -120,7 +120,7 @@
    "speed": 1.0,
    "video_editor_max_pause": 0.3,
    "pack": [],
-   "edits_quick_recipe": null
+   "edits_quick_recipe": "styles/codie-sanchez.md"
   },
   {
    "slug": "diary-of-a-ceo",
@@ -143,7 +143,7 @@
    "speed": 1.1,
    "video_editor_max_pause": 0.3,
    "pack": [],
-   "edits_quick_recipe": null
+   "edits_quick_recipe": "styles/diary-of-a-ceo.md"
   },
   {
    "slug": "nana-del-rey",
@@ -166,7 +166,7 @@
    "speed": 1.0,
    "video_editor_max_pause": 0.8,
    "pack": [],
-   "edits_quick_recipe": null
+   "edits_quick_recipe": "styles/nana-del-rey.md"
   },
   {
    "slug": "mariah-brunner",
@@ -194,7 +194,7 @@
     "callout",
     "sound"
    ],
-   "edits_quick_recipe": null
+   "edits_quick_recipe": "styles/mariah-brunner.md"
   },
   {
    "slug": "nick-saraev",
@@ -221,7 +221,7 @@
     "callout",
     "sound"
    ],
-   "edits_quick_recipe": null
+   "edits_quick_recipe": "styles/nick-saraev.md"
   },
   {
    "slug": "iman-gadzhi",
@@ -247,7 +247,7 @@
     "callout",
     "sound"
    ],
-   "edits_quick_recipe": null
+   "edits_quick_recipe": "styles/iman-gadzhi.md"
   },
   {
    "slug": "calm-luxury",
@@ -269,7 +269,7 @@
    "speed": 1.0,
    "video_editor_max_pause": 0.9,
    "pack": [],
-   "edits_quick_recipe": null
+   "edits_quick_recipe": "styles/calm-luxury.md"
   },
   {
    "slug": "pop-up-proof",

@@ -7,9 +7,9 @@ description: Library, not a skill to run on its own. The shared set of 11 reel l
 
 This folder is a **library** used by two skills:
 
-- `/instagram-edits`: builds the look as an editable project in Instagram's Edits app (quick = Edits' own tools,
-  premium = a transparent overlay rendered from the template + Edits' own camera moves).
-- `/video-editor`: renders the look as a finished 9:16 MP4.
+- `/instagram-edits`: builds the look as an editable project in Instagram's Edits app, natively, with Edits' own
+  tools only (it reads `SPEC.md` + `USE.md` and follows its own `styles/<slug>.md` recipe; it never runs the code here).
+- `/video-editor`: renders the look as a finished 9:16 MP4 with the HyperFrames motion templates in each folder.
 
 Don't run anything here directly and don't build reels inside this folder. If someone asks for a look by name
 ("the Codie Sanchez look", "pop-up proof"), use whichever of those two skills they're working in, or ask which one
@@ -18,8 +18,8 @@ they want (an editable Edits project, or a finished video file).
 ## For the skill that reads this
 - `index.json` matches what people say to a folder: `name` (gallery name) and `also` (other names). Match loosely.
 - Each folder (`looks/<slug>/`, `formats/<slug>/`) has `SPEC.md` (every number), `USE.md` (the two routes),
-  `card.json` (gallery card) and the code. Always copy a folder AND `_shared/` side by side into the build folder:
-  several templates import `../_shared/reeltools.py`.
+  `card.json` (gallery card) and the code. The Video Editor copies a folder AND `_shared/` side by side into its build
+  folder (several templates import `../_shared/reeltools.py`); instagram-edits only reads the docs.
 - Fonts: `bash _shared/get_fonts.sh <slug> <build folder>`.
 - The library path: `$REEL_LOOKS_DIR`, else `~/.agents/skills/reel-looks`, else `~/.claude/skills/reel-looks`.
 - Gallery to show people: https://claude.ai/artifact/N46Gep95Kujh6TWQyV2y2r

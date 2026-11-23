@@ -30,8 +30,11 @@ The Video Editor does its own cut first (dead air, ums, retakes), then hands thi
 
 ## Instagram Edits route: an editable Edits project
 
-- **Quick:** built with Edits' own tools from `styles/before-after-reveal.md` in the instagram-edits skill.
-  Skip what Edits can't do and say what premium would add.
-- **Premium:** run the template's overlay build (graphics only, transparent background), render it as a `.mov`
-  (`--format mov`, ProRes 4444 with alpha), then in Edits: the cut clip at 0 s, the overlay on top at 0 s, x 0.5,
-  y 0.5, scale 1.0. Edits then does natively: **nothing extra**. See `references/premium-build.md` in instagram-edits.
+Built natively in Edits, with Edits' own tools only (no rendering, no overlay video): `/instagram-edits` follows
+`styles/before-after-reveal.md` in the instagram-edits skill. That recipe takes its numbers and feel from this SPEC and turns them
+into Edits steps (captions, text presets and animations, the sound effects library, zooms and keyframes, filters,
+transitions, split screen, cut-outs). Where a move here can't be done in Edits, it does the closest Edits version and
+says what it swapped. It never runs this folder's build or render commands.
+
+The fully animated version, using the HyperFrames motion templates in this folder, is the Claude Video Editor route
+above.
