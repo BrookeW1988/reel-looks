@@ -1,0 +1,35 @@
+{
+  "slug": "yes-but-split",
+  "title": "Yes… but split",
+  "inspired_by": null,
+  "one_liner": "Top half is the dream, bottom half is the catch: meme labels, two opposite colour grades, and BUT landing a beat late with a record scratch.",
+  "best_for": "\"The reality of running a business\", what clients think vs what actually happens",
+  "effort": "Low-medium",
+  "palette": [
+    {
+      "hex": "#FFFFFF",
+      "use": "labels, divider"
+    },
+    {
+      "hex": "#000000",
+      "use": "meme outline"
+    }
+  ],
+  "fonts": [
+    {
+      "name": "Anton",
+      "google_font": "https://fonts.google.com/specimen/Anton"
+    },
+    {
+      "name": "Inter Bold (sub-labels)",
+      "google_font": "https://fonts.google.com/specimen/Inter"
+    }
+  ],
+  "pace": "5-12 s, both halves play together (the demo build was 5.6 s)",
+  "signature_moves": [
+    "Warm, saturated YES half over a cool, desaturated BUT half",
+    "BUT label slams in 0.8 s late with one record scratch",
+    "Meme-style Anton labels with a thick black outline"
+  ],
+  "references": []
+}

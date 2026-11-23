@@ -1,0 +1,35 @@
+[
+ {
+  "_note": "Example entries: replace with real public pages you name in your take. Never mock a page up. top_text = text near the top of the part to crop; marks = exact phrases on the page to highlight; height = crop height in css px; pad_top = space above top_text; hide = css selectors to hide (cookie banners, sticky bars), never page text; view_w = narrower viewport for bigger text.",
+  "id": "your-page",
+  "url": "https://example.com/a-page-you-mention",
+  "top_text": "A heading on that page",
+  "pad_top": 14,
+  "height": 262,
+  "marks": [
+   "a phrase on the page",
+   "another phrase"
+  ]
+ },
+ {
+  "id": "second-page",
+  "url": "https://en.m.wikipedia.org/wiki/Your_topic",
+  "top_text": "Your topic",
+  "pad_top": 16,
+  "height": 168,
+  "marks": [
+   "the words",
+   "you say",
+   "out loud"
+  ],
+  "hide": [
+   ".page-actions-menu",
+   ".hatnote",
+   ".mw-pulsating-dot",
+   ".minerva__tab-container",
+   "#page-secondary-actions",
+   ".mw-indicators"
+  ],
+  "view_w": 330
+ }
+]

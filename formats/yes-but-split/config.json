@@ -1,0 +1,33 @@
+{
+ "_why": "Everything a member's version changes. Times are SOURCE seconds. focus_y = where in the clip (0 top, 1 bottom) the crop window sits, so the face fills the half and stays clear of the labels.",
+ "_note": "Example values: file names, keep ranges, speeds, focus_y and the labels only show the shape. YES = the dream (top half), BUT = the catch (bottom half). label = one or two words in caps with a colon; sub = 1-2 short lines. Make both clips the same length after speed (slow the shorter one or trim the longer). but_delay = seconds before BUT lands (0 = both labels from frame 0).",
+ "yes": {
+  "src": "~/Movies/Edits-inbox/your-dream-clip.mov",
+  "keep": [
+   0.0,
+   3.95
+  ],
+  "speed": 0.7,
+  "label": "YES:",
+  "sub": [
+   "the dream,",
+   "line two"
+  ],
+  "focus_y": 0.28
+ },
+ "but": {
+  "src": "~/Movies/Edits-inbox/your-reality-clip.mov",
+  "keep": [
+   0.2,
+   5.84
+  ],
+  "speed": 1.0,
+  "label": "BUT:",
+  "sub": [
+   "the catch,",
+   "line two"
+  ],
+  "focus_y": 0.58
+ },
+ "but_delay": 0.8
+}

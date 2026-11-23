@@ -1,0 +1,47 @@
+{
+  "slug": "iman-gadzhi",
+  "title": "Value-only motion",
+  "inspired_by": "inspired by Iman Gadzhi (@imangadzhi)",
+  "one_liner": "Your face does the talking; graphics only fire on the claims, numbers and numbered steps, so every one feels like a reward.",
+  "best_for": "Framework, mindset and money reels with a number or a '3 reasons' list: 'here's why', 'number two', 'from X to 10x'.",
+  "effort": "Medium: one take, a 2-minute pass to tag your value sentences, then Claude builds it.",
+  "palette": [
+    {
+      "hex": "#2230E8",
+      "use": "the ONE accent: lit chapter boxes, handwriting, stamps, the active caption word, the concept field (swap for your brand colour)"
+    },
+    {
+      "hex": "#0B0B0D",
+      "use": "tape strips, the number field, linework"
+    },
+    {
+      "hex": "#FFFFFF",
+      "use": "condensed type, handwriting on fields, captions"
+    }
+  ],
+  "fonts": [
+    {
+      "name": "Anton",
+      "google_font": "https://fonts.google.com/specimen/Anton"
+    },
+    {
+      "name": "Caveat",
+      "google_font": "https://fonts.google.com/specimen/Caveat"
+    },
+    {
+      "name": "Inter",
+      "google_font": "https://fonts.google.com/specimen/Inter"
+    }
+  ],
+  "pace": "1.1x, jump cuts hidden by hard-cut punch-ins (1.06-1.08); 6 value events in 29 s, 34% animated, longest bare-face stretch 5.5 s.",
+  "signature_moves": [
+    "Animate value, never delivery: claims, numbers and numbered steps get a graphic; stories stay on your bare face",
+    "Condensed all-caps word on torn tape, paired with a pen-traced handwritten note in your own words",
+    "Numbered chapter rail (1 2 3) that lights up as you reach each point, so viewers can see how far through they are"
+  ],
+  "references": [
+    "https://www.instagram.com/imangadzhi/",
+    "https://www.instagram.com/reel/CnNEQnFpy03/",
+    "https://www.instagram.com/reel/CmylMjXpeCT/"
+  ]
+}

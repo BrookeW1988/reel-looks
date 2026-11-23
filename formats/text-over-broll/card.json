@@ -1,0 +1,34 @@
+{
+  "slug": "text-over-broll",
+  "title": "Text over B-roll",
+  "inspired_by": null,
+  "one_liner": "Calm everyday footage, slowed and warm-graded, with one lowercase line written like a text to a friend.",
+  "best_for": "Camera-shy members, busy days and relatable one-liners: no talking, no captions, no sound effects.",
+  "effort": "Low",
+  "palette": [
+    {
+      "hex": "#FFFFFF",
+      "use": "the text, the only colour you add (the footage brings the rest)"
+    },
+    {
+      "hex": "#000000",
+      "use": "the text's soft shadow at 45%"
+    }
+  ],
+  "fonts": [
+    {
+      "name": "Instrument Sans Medium",
+      "google_font": "https://fonts.google.com/specimen/Instrument+Sans"
+    }
+  ],
+  "pace": "8-12 s (the demo build was 8.1 s), 3 clips slowed to 0.5-0.6x, one line per clip on its cut, hard cuts, loops cleanly",
+  "signature_moves": [
+    "Each line arrives word by word with a soft blur on its clip's cut; earlier lines stay, so the text reads like a thread",
+    "Warm film grade on every clip (Film Memory: vintage wash, lifted blacks, grain) with a barely-there gate weave",
+    "The last frame matches the first, so the reel loops without a seam"
+  ],
+  "references": [
+    "https://www.instagram.com/reel/DZz6ubJxH0i/",
+    "https://www.instagram.com/reel/DcJaVCfRGZi/"
+  ]
+}

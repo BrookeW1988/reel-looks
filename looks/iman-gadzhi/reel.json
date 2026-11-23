@@ -1,0 +1,49 @@
+{
+  "_readme": "Everything a member changes lives here. cut.py reads source/keep/speed; build.py reads the rest. Phrases are matched against the CUT transcript (assets/words-cut.json), case and punctuation ignored, so every phrase below must be words the member really says. Every value is an EXAMPLE showing the shape: Claude fills it from her take before each build. See SPEC.md 'How a member's version differs'.",
+
+  "source": "~/Movies/Edits-inbox/your-take.mov",
+  "_keep_note": "Source-second ranges to keep, in order (example values): the hook claim, each reason's value sentence, the close.",
+  "keep": [[2.08, 10.55], [10.95, 12.73], [12.90, 17.45], [19.94, 20.60], [20.90, 24.42],
+           [40.93, 42.93], [43.10, 47.74], [48.05, 50.47], [50.81, 55.05]],
+  "speed": 1.1,
+  "voice_lufs": -14.0,
+  "_snap_readme": "Word edges MEASURED from 20 ms RMS around each seam/trigger (whisper runs up to ~0.44 s early after pauses). Key = text@whisper-start (source s, exactly as in words-src.json); value = [start, end] source s, null keeps whisper's. drop = whisper words that are really outside the kept audio. Both start empty.",
+  "snap_src": {},
+  "drop_src": [],
+  "_caption_fixes_note": "Proofreading fixes by cut-word index, e.g. {\"0\": \"Everyone\"}.",
+  "caption_fixes": {},
+
+  "_colour_note": "accent = the member's brand colour (the ONE accent). ink and paper stay.",
+  "accent": "#2230E8",
+  "ink": "#0B0B0D",
+  "paper": "#FFFFFF",
+
+  "_hook_note": "note = a short handwritten line (her words), hero = 1-3 condensed caps words on tape, stamp = one word slapped on at stamp_on, the hook leaves on out_on. All phrases from the take.",
+  "hook": {
+    "note": "a phrase you say",
+    "hero": "YOUR HOOK?",
+    "stamp": "WORD",
+    "stamp_on": "word",
+    "out_on": "next phrase"
+  },
+  "_emphasis_punch_note": "Optional: one hard 1.08 punch-in on 'on' inside the hook sentence, back to 1.0 on 'off'. Delete the key for none.",
+  "emphasis_punch": {"on": "a stressed phrase", "off": "the phrase after it"},
+
+  "_map_note": "on = the promise line that opens the list (e.g. here's why); count = how many numbered points. count 0 and no chapters = no rail.",
+  "map": {"on": "here's why", "count": 3},
+
+  "_chapters_note": "One per numbered point the member says. on = where it starts, label = her own words (handwritten), title = a 1-2 word caps title, out_after = the last word of that point's value sentence.",
+  "chapters": [
+    {"n": 1, "on": "one your first point", "label": "one", "title": "FIRST POINT", "out_after": "point", "hold": 0.0},
+    {"n": 2, "on": "number two", "label": "number two", "title": "SECOND", "out_after": "word", "hold": 0.1},
+    {"n": 3, "on": "number three is your third", "label": "number three", "title": "THIRD", "out_after": "third", "hold": 0.0}
+  ],
+
+  "_majors_note": "The two full-screen value events. kind accent = a concept field (small line + hero word + handwritten note + drawn bills); kind black = a number counting from 'from' to 'to' that lands on the spoken number, with a tape label. Only numbers she actually says.",
+  "majors": [
+    {"kind": "accent", "phrase": "a claim you make about money", "small": "A CLAIM", "hero": "MONEY", "note": "about money", "note_on": "about money", "object": "cash", "tail": 0.12},
+    {"kind": "black", "phrase": "and that is 10x", "in_on": "that is 10x", "from": 1, "to": 10, "suffix": "X", "tape": "YOUR LABEL", "note": "a phrase you say", "tail": 0.30}
+  ],
+
+  "value_budget": 0.35
+}

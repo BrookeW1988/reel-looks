@@ -1,0 +1,41 @@
+{
+  "_readme": "Everything a member changes lives here. Run: python3 build.py && npx --yes hyperframes@0.9.83 check --json. Numbers come from SPEC.md.",
+  "_note": "Example config, not real content. 'lines' must be your exact spoken words in order, split into one-line phrases of 3-6 words (build.py checks them against words-cut.json and stops if they don't match). Shot durations and type positions are example values from a 17.7 s demo take.",
+  "shots": [
+    {
+      "src": "assets/cut.mp4",
+      "in": 0.0,
+      "dur": 17.733,
+      "audio": true,
+      "cut_points": "assets/cut-points.json",
+      "note": "one locked-off talking-head hold (cut.py); dur = the length of your cut.mp4"
+    }
+  ],
+  "voice": null,
+  "_voice_note": "Optional separate voiceover file in assets/ (for hands/process footage). null = the voice is on the shot.",
+  "music": null,
+  "_music_note": "Optional, not shipped: {\"src\": \"assets/music/your-bed.m4a\", \"volume\": 0.126} (18 dB under the voice). A missing file is left out; or add music in the Edits window yourself (library music goes silent in Claude exports).",
+  "words": "assets/words-cut.json",
+  "lines": [
+    "Your first phrase here,",
+    "one short line at a time,",
+    "in the order you say it,",
+    "ending on your closing line."
+  ],
+  "title": null,
+  "_title_note": "Optional static title for hands footage: {\"lines\": [\"line one\", \"line two\"], \"start\": 0, \"end\": null}.",
+  "bookend": null,
+  "_bookend_note": "Optional: {\"dur\": 1.2} repeats the opening shot at the end so the loop is invisible (object footage).",
+  "type": {
+    "font_file": "assets/fonts/Newsreader-opsz-wght.ttf",
+    "caption_px": 51,
+    "caption_centre_y": 1480,
+    "caption_max_width": 840,
+    "title_px": 60,
+    "title_centre_y": 700,
+    "title_leading": 1.42,
+    "colour": "#FFFFFF"
+  },
+  "grade_file": "grade-attr.txt",
+  "background": "#140F09"
+}

@@ -1,0 +1,60 @@
+{
+  "slug": "diary-of-a-ceo",
+  "title": "Podcast clip",
+  "inspired_by": "inspired by The Diary of a CEO (@thediaryofaceo)",
+  "one_liner": "A dark, moody podcast clip: the hook is on screen from the first frame, short captions sit under your chin, a profile card says who you are, and the last line fades to black and white.",
+  "best_for": "Clips from your own podcast, interview, workshop or Zoom/Riverside chat where one strong opinion carries the whole clip",
+  "effort": "Medium: rough cut + word timings + one build; one camera works, two people on a call works even better",
+  "palette": [
+    {
+      "hex": "#000000",
+      "use": "hook boxes, name-label box, ID-card background"
+    },
+    {
+      "hex": "#FCFCFC",
+      "use": "hook words and the main speaker's captions"
+    },
+    {
+      "hex": "#F2B840",
+      "use": "host captions and the name label under the hook"
+    },
+    {
+      "hex": "#E04B4D",
+      "use": "one red word in the hook and in a caption block"
+    },
+    {
+      "hex": "#EFE4D6",
+      "use": "ID-card paper"
+    },
+    {
+      "hex": "#7F140C",
+      "use": "ID-card tags and label"
+    }
+  ],
+  "fonts": [
+    {
+      "name": "Inter",
+      "google_font": "https://fonts.google.com/specimen/Inter"
+    },
+    {
+      "name": "EB Garamond",
+      "google_font": "https://fonts.google.com/specimen/EB+Garamond"
+    }
+  ],
+  "pace": "Pauses cut tight, 1.1x, ~172 wpm; a new crop every 1.7-3.9 s (median ~2.2 s); captions hard-switch every 1-3 words",
+  "signature_moves": [
+    "Hook frame on frame 0: two faces side by side, a glowing divider and a two-line caps headline on black boxes, both lines locked to the same width, one word in red",
+    "A full-screen profile card at about a quarter of the way in: tilted B&W print, your name huge, real role tags stamped in one by one",
+    "The emotional beat: the last line fades from colour to black and white while the caption holds"
+  ],
+  "references": [
+    "https://www.instagram.com/reel/DeybkNcAGt-/",
+    "https://www.instagram.com/reel/DfWjaHdB8Ec/",
+    "https://www.instagram.com/reel/DfolAk7hgQa/",
+    "https://www.instagram.com/reel/Deqq_3lBp3B/",
+    "https://www.instagram.com/reel/Dfy4Jk-h3DP/",
+    "https://www.instagram.com/reel/Df4JnrtysPF/",
+    "https://www.instagram.com/reel/Df1xhKUyk8I/",
+    "https://www.instagram.com/reel/Df-JKsTz9qG/"
+  ]
+}

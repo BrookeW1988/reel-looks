@@ -1,0 +1,51 @@
+{
+  "slug": "calm-luxury",
+  "title": "Calm luxury",
+  "inspired_by": "inspired by Jess Bergeron (@jkb.journal)",
+  "one_liner": "The camera never moves, only you do: one small white serif line, warm window light, hard cuts, no effects, and it loops.",
+  "best_for": "Premium or slow-living brands, coaches and makers who want to look expensive and unhurried. Best with hands-at-work or product footage; works on a talking head if you film locked off by a window.",
+  "effort": "Low: phone on a stand, one font, no animation. Most of the work is filming in good window light.",
+  "palette": [
+    {
+      "hex": "#FFFFFF",
+      "use": "every word on screen: white, no shadow, stroke or box"
+    },
+    {
+      "hex": "#140F09",
+      "use": "deep shadow / background ink (blacks stay deep, never faded)"
+    },
+    {
+      "hex": "#492C1A",
+      "use": "warm walnut surface (wood, linen) under the subject"
+    },
+    {
+      "hex": "#B4A792",
+      "use": "oat mid-tones: linen, ceramics, window-lit surfaces"
+    },
+    {
+      "hex": "#D2D4CB",
+      "use": "soft window glow / off-white ceramic, highlights held below clipping"
+    }
+  ],
+  "fonts": [
+    {
+      "name": "Newsreader (opsz 16, Regular 400)",
+      "google_font": "https://fonts.google.com/specimen/Newsreader"
+    }
+  ],
+  "pace": "Normal speaking speed (162-172 words a minute), never sped up. Talking holds of 8-15 s; detail shots of 0.6-1.9 s cut on the finished action. Calm comes from stillness, not slow cutting.",
+  "signature_moves": [
+    "Locked-off camera: no zooms, punch-ins or shake. Only the subject moves.",
+    "One small white serif line (Newsreader, ~51 px) that swaps hard on each phrase. No animation, no highlight word.",
+    "Bookend loop: the last shot returns to the opening shot and the last line flows back into the first."
+  ],
+  "references": [
+    "https://www.instagram.com/jkb.journal/",
+    "https://www.instagram.com/reel/DdPKKSwTYAl/",
+    "https://www.instagram.com/reel/DfNOAfmzeFt/",
+    "https://www.instagram.com/reel/Dfh2AkrTVKJ/",
+    "https://www.instagram.com/reel/DfU_5fJz5ln/",
+    "https://www.instagram.com/reel/Dfz8nOezDTh/",
+    "https://www.instagram.com/reel/DfFisHtzLEO/"
+  ]
+}

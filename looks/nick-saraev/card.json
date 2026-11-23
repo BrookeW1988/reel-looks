@@ -1,0 +1,57 @@
+{
+  "slug": "nick-saraev",
+  "title": "The Recompose",
+  "inspired_by": "inspired by Nick Saraev (@nick_saraev)",
+  "one_liner": "The frame rearranges itself around every sentence: your face, then a split with the thing you mean, then the real proof full screen, then back to you.",
+  "best_for": "Explainers with a point per sentence: 'here's why', how a tool works, a list of reasons, anything where you can show the real page or the real thing you mention.",
+  "effort": "Medium: one 15-30 s take plus 2-4 real screenshots or logos. Claude builds it; in Edits you add one overlay and keyframe your clip between two positions.",
+  "palette": [
+    {
+      "hex": "#F7F6F3",
+      "use": "paper field behind proof and split beats"
+    },
+    {
+      "hex": "#E9ECEB",
+      "use": "pale sage field for type and equation slides"
+    },
+    {
+      "hex": "#101012",
+      "use": "ink: headlines, captions on paper"
+    },
+    {
+      "hex": "#FF5A36",
+      "use": "brand accent (default #FF5A36, yours goes here): italic words, highlighter, ticks, keyword in captions"
+    },
+    {
+      "hex": "#FFE8E3",
+      "use": "pale tint of your accent (mixed automatically) behind hook line 2"
+    },
+    {
+      "hex": "#FFFFFF",
+      "use": "cards, hook line 1, captions over your footage"
+    }
+  ],
+  "fonts": [
+    {
+      "name": "Inter (800)",
+      "google_font": "Inter"
+    },
+    {
+      "name": "Playfair Display Italic (700-800)",
+      "google_font": "Playfair Display"
+    }
+  ],
+  "pace": "The layout changes about every 2.4 s (8 frame states + 2 object carries in 23.7 s, each a 0.5 s eased recompose, never a hard cut), with something landing inside each beat about every 1.5 s; voice at 1.1x, no music.",
+  "signature_moves": [
+    "One frame, three states: face -> split (you in a rounded box, the object above) -> full-screen proof, with no hard cuts, it recomposes",
+    "Real proof grows from the split into full screen while a highlighter sweeps the exact words you say",
+    "Serif-italic accent words and a visual equation (idea x tool = result) built from the objects already on screen"
+  ],
+  "references": [
+    "https://www.instagram.com/nick_saraev/",
+    "https://www.instagram.com/reel/DgAcVKdPa5U/",
+    "https://www.instagram.com/reel/Df9CCTPPAgb/",
+    "https://www.instagram.com/reel/Df1c5H9P5HI/",
+    "https://www.instagram.com/p/DcEFABnvBuH/"
+  ]
+}

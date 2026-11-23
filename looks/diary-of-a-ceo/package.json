@@ -1,0 +1,12 @@
+{
+  "name": "diary-of-a-ceo",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "python3 build.py",
+    "dev": "npx --yes hyperframes@0.9.83 preview",
+    "check": "npx --yes hyperframes@0.9.83 check",
+    "render": "npx --yes hyperframes@0.9.83 render --workers 2 -o renders/diary-of-a-ceo.mp4",
+    "render:overlays": "npx --yes hyperframes@0.9.83 render overlays --format mov --workers 2 -o renders/diary-of-a-ceo-overlays.mov"
+  }
+}

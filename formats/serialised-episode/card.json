@@ -1,0 +1,41 @@
+{
+  "slug": "serialised-episode",
+  "title": "Serialised episode",
+  "inspired_by": null,
+  "one_liner": "Same shot, same badge, same sound every time; only the number and the topic change, so viewers come back for the next one.",
+  "best_for": "A weekly habit: 'Tip #N', 'Day N', 'Client question #N' coaches, makers and product brands.",
+  "effort": "Low once set up",
+  "palette": [
+    {
+      "hex": "#FF5A36",
+      "use": "brand accent (default tomato): series badge, this episode's tick, keyword chips"
+    },
+    {
+      "hex": "#141414",
+      "use": "brand ink: caption and topic text, past-episode ticks"
+    },
+    {
+      "hex": "#FAF7F2",
+      "use": "brand cream: topic box and caption boxes"
+    }
+  ],
+  "fonts": [
+    {
+      "name": "Archivo Black",
+      "google_font": "https://fonts.google.com/specimen/Archivo+Black"
+    },
+    {
+      "name": "Archivo (SemiBold, Bold)",
+      "google_font": "https://fonts.google.com/specimen/Archivo"
+    }
+  ],
+  "pace": "16.5 s, 1.15x with pauses cut, 2-3 word captions, a hard punch-in on each jump cut",
+  "signature_moves": [
+    "The series lockup lands with one signature stamp sound, the same file every episode",
+    "On the spoken number the '#3' re-stamps and this episode's tick fills on the episode rail",
+    "A highlighter sweeps under the topic word as it's said; keywords flip to accent chips in the captions"
+  ],
+  "references": [
+    "https://www.instagram.com/reel/DbDWjWvIv6k/"
+  ]
+}

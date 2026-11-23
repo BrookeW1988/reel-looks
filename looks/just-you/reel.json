@@ -1,0 +1,26 @@
+{
+  "_note": "Everything a member changes lives here. Times are SOURCE seconds in segments (the numbers below are example values: Claude sets them per take at real pauses); every other moment is a spoken phrase (matched in assets/words-cut.json), so the look re-times itself to a new take. Run cut.py, then build.py.",
+  "speed": 1.3,
+  "voice_lufs": -14,
+  "_segments_note": "One object per take. src = your SDR take; keep = [start, end] spans in source seconds; shift_px slides the take down (120-240) only if a card needs the room above your head; grade is optional warmth etc. Add another object for a second take.",
+  "segments": [
+    {"src": "~/Movies/Edits-inbox/your-take.mov", "keep": [[0.5, 8.2], [8.6, 15.0]], "shift_px": 0,
+     "grade": {"temperature": 0.0}}
+  ],
+  "_word_fixes_note": "Words whisper mishears in YOUR take, e.g. {\"Kanva\": \"Canva\"}. Phrase keys work across words.",
+  "word_fixes": {},
+
+  "_hook_note": "2 lines, 5-9 words, one emoji at most (never a rocket). until = the first word you say AFTER your spoken hook.",
+  "hook": {
+    "lines": ["Your hook, line one", "and line two 🤯"],
+    "until": "a phrase you say"
+  },
+  "_cta_note": "Optional. Only for a call to action you really say on camera (e.g. a comment keyword, only if you have a real keyword funnel set up). from / until = spoken phrases. Delete this block if there's no CTA.",
+  "cta": {"text": "Your CTA line 👇", "from": "a phrase you say", "until": "the next phrase"},
+  "_cards_note": "One card only for a real thing you name: your own screenshot or product page. image lives in assets/cards/. until can be END. No real thing named = no card (delete the entry).",
+  "cards": [
+    {"image": "assets/cards/your-screenshot.png", "from": "the thing you name", "until": "END",
+     "alt": "what the screenshot shows (real screenshot)", "width": 880}
+  ],
+  "captions": {"max_words": 3, "max_chars": 16}
+}

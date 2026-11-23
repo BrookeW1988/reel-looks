@@ -1,0 +1,47 @@
+{
+  "slug": "green-screen-proof",
+  "title": "Green-screen proof",
+  "inspired_by": null,
+  "one_liner": "You talk in front of the real page you're reacting to, with a highlighter hook, a source chip and a red pen mark on the exact line as you say it.",
+  "best_for": "Industry news, answering a comment, myth-busting",
+  "effort": "Low",
+  "palette": [
+    {
+      "hex": "#F4F1EA",
+      "use": "newsprint ground behind the page"
+    },
+    {
+      "hex": "#FFF34F",
+      "use": "hook highlighter stripe"
+    },
+    {
+      "hex": "#E63946",
+      "use": "hand-drawn circle / underline on the key line"
+    },
+    {
+      "hex": "#000000",
+      "use": "hook text, caption box, source chip"
+    },
+    {
+      "hex": "#FFFFFF",
+      "use": "page frame, caption text"
+    }
+  ],
+  "fonts": [
+    {
+      "name": "Space Grotesk Bold",
+      "google_font": "https://fonts.google.com/specimen/Space+Grotesk"
+    },
+    {
+      "name": "Space Mono",
+      "google_font": "https://fonts.google.com/specimen/Space+Mono"
+    }
+  ],
+  "pace": "20-45 s at 1.1-1.3x (demo 27.3 s at 1.15x); the page changes on the sentence that starts the next point",
+  "signature_moves": [
+    "Real web page captured at phone width, credited with a source chip",
+    "Red pen mark drawn on the exact words as you say the matching line",
+    "A cut-out of you in front of the page; the page scrolls in for each new point"
+  ],
+  "references": []
+}

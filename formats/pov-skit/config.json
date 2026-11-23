@@ -1,0 +1,31 @@
+{
+ "_why": "Everything a member's version changes. Times are SOURCE seconds in the take (the numbers below are example values from the demo take: Claude sets them per take). The last keep range is the reaction beat, with a third number for its speed (0.5 = half speed so it lands).",
+ "take": "~/Movies/Edits-inbox/your-take.mov",
+ "keep": [
+  [
+   0.5,
+   4.45
+  ],
+  [
+   4.45,
+   5.0,
+   0.5
+  ]
+ ],
+ "_pov_lines_why": "1-2 lines, sentence case, readable in under 2 s (about 8 words), each line inside x 65-1015.",
+ "pov_lines": [
+  "POV: your setup line",
+  "and line two"
+ ],
+ "_reaction_emoji_why": "A 3D emoji PNG you add to assets/img/ (e.g. from Microsoft's Fluent Emoji, MIT licence). Missing file = no emoji. Use \"\" for none.",
+ "reaction_emoji": "your-emoji.png",
+ "_face_centre_why": "x, y of your face on the 1080x1920 frame: the punch-in grows from here.",
+ "face_centre": [
+  540,
+  650
+ ],
+ "punch": 1.3,
+ "caption_top": 1180,
+ "voice_gain": 1.11,
+ "_voice_gain_why": "example from the demo: it measured -14.9 LUFS in the first render; x1.11 = +0.9 dB -> -14.0. Re-measure yours with ../_shared/measure.py."
+}

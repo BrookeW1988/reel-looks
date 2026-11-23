@@ -1,0 +1,478 @@
+{
+ "_about": "Every look and format in this library. Both skills read this file to match what a member says ('edit this in the Codie look') to a folder. name = the gallery name; also = other ways people say it.",
+ "gallery": "https://claude.ai/artifact/N46Gep95Kujh6TWQyV2y2r",
+ "hyperframes": "0.9.83",
+ "items": [
+  {
+   "slug": "just-you",
+   "kind": "look",
+   "name": "Just you",
+   "also": [
+    "just you",
+    "raw",
+    "less edited"
+   ],
+   "folder": "looks/just-you",
+   "title": "Just you",
+   "inspired_by": "inspired by Taki Wong (@taki.gpt)",
+   "one_liner": "Your face, a big boxed hook, small captions, and one real picture only when you name something.",
+   "config": "reel.json",
+   "needs": [],
+   "edits_native": "nothing extra",
+   "speed": 1.3,
+   "video_editor_max_pause": 0.3,
+   "pack": [
+    "sound"
+   ],
+   "edits_quick_recipe": "styles/just-you.md"
+  },
+  {
+   "slug": "full",
+   "kind": "look",
+   "name": "Full",
+   "also": [
+    "full",
+    "busy",
+    "the full one"
+   ],
+   "folder": "looks/full",
+   "title": "Full",
+   "inspired_by": "a busier version of Just you",
+   "one_liner": "Just you, turned up: punch-ins, a numbered list card, accent keywords and (optional) stickers of your own art, one at a time.",
+   "config": "reel.json",
+   "needs": [],
+   "edits_native": "112% / 125% punch-ins on the big lines",
+   "speed": 1.3,
+   "video_editor_max_pause": 0.3,
+   "pack": [
+    "gif",
+    "emoji",
+    "callout",
+    "sound"
+   ],
+   "edits_quick_recipe": "styles/full.md"
+  },
+  {
+   "slug": "hormozi-classic",
+   "kind": "look",
+   "name": "Hormozi classic",
+   "also": [
+    "hormozi classic",
+    "bold word pop",
+    "classic hormozi"
+   ],
+   "folder": "looks/hormozi-classic",
+   "title": "Bold Word Pop",
+   "inspired_by": "inspired by Alex Hormozi (@hormozi)",
+   "one_liner": "Huge all-caps captions with the spoken word lit up, a punch-in every second or two, zero dead air, no music.",
+   "config": "config.json",
+   "needs": [],
+   "edits_native": "punch-ins 1.00 / 1.18, one 1.30",
+   "speed": 1.2,
+   "video_editor_max_pause": 0.3,
+   "pack": [
+    "sound"
+   ],
+   "edits_quick_recipe": "styles/hormozi-classic.md"
+  },
+  {
+   "slug": "hormozi-2026",
+   "kind": "look",
+   "name": "Hormozi 2026",
+   "also": [
+    "hormozi 2026",
+    "red tag desk talk",
+    "new hormozi",
+    "hormozi"
+   ],
+   "folder": "looks/hormozi-2026",
+   "title": "Red Tag Desk Talk",
+   "inspired_by": "inspired by Alex Hormozi (@hormozi)",
+   "one_liner": "A red label tag for the first 4.5 s, small sentence-case captions that hard-swap, and a list card that un-redacts point by point as you say it.",
+   "config": "config.json",
+   "needs": [],
+   "edits_native": "one 1.15 punch-in",
+   "speed": 1.15,
+   "video_editor_max_pause": 0.3,
+   "pack": [
+    "gif",
+    "emoji",
+    "callout"
+   ],
+   "edits_quick_recipe": null
+  },
+  {
+   "slug": "codie-sanchez",
+   "kind": "look",
+   "name": "Codie Sanchez",
+   "also": [
+    "codie",
+    "codie sanchez",
+    "studio editorial"
+   ],
+   "folder": "looks/codie-sanchez",
+   "title": "Studio editorial",
+   "inspired_by": "inspired by Codie Sanchez (@codiesanchez)",
+   "one_liner": "Quiet, expensive founder look: a bold serif lead-in over a light sans line that types on as you speak, a warm grade, hard cuts between two framings and a soft music bed. Nothing bounces.",
+   "config": "screens.json (+ the --keep ranges for cut.py)",
+   "needs": [],
+   "edits_native": "alternate 1.00 / 1.18 framing on each cut; warm grade",
+   "speed": 1.0,
+   "video_editor_max_pause": 0.3,
+   "pack": [],
+   "edits_quick_recipe": null
+  },
+  {
+   "slug": "diary-of-a-ceo",
+   "kind": "look",
+   "name": "Diary of a CEO",
+   "also": [
+    "diary of a ceo",
+    "doac",
+    "podcast clip"
+   ],
+   "folder": "looks/diary-of-a-ceo",
+   "title": "Podcast clip",
+   "inspired_by": "inspired by The Diary of a CEO (@thediaryofaceo)",
+   "one_liner": "A dark, moody podcast clip: the hook is on screen from the first frame, short captions sit under your chin, a profile card says who you are, and the last line fades to black and white.",
+   "config": "the CLAUDE CHANGES PER TAKE blocks in cut.py and build.py",
+   "needs": [
+    "a closed-mouth 'listening' moment from the same take (the react shot)"
+   ],
+   "edits_native": "three crops (1.0 / 1.2 / 1.3) switched on each join; B&W on the last line",
+   "speed": 1.1,
+   "video_editor_max_pause": 0.3,
+   "pack": [],
+   "edits_quick_recipe": null
+  },
+  {
+   "slug": "nana-del-rey",
+   "kind": "look",
+   "name": "Nana Del Rey",
+   "also": [
+    "nana",
+    "nana del rey",
+    "soft cinema"
+   ],
+   "folder": "looks/nana-del-rey",
+   "title": "Soft Cinema",
+   "inspired_by": "inspired by Nana DelRey (@nanadelrey)",
+   "one_liner": "Slow, warm and filmic: giant butter-yellow words build word by word behind your head, and thin cream lowercase subtitles fill the air above you, left to right.",
+   "config": "reel.json (+ SRC/KEEP in cut.py)",
+   "needs": [
+    "the person cut-out (made by `hyperframes remove-background`, slow)"
+   ],
+   "edits_native": "darker, warmer grade",
+   "speed": 1.0,
+   "video_editor_max_pause": 0.8,
+   "pack": [],
+   "edits_quick_recipe": null
+  },
+  {
+   "slug": "mariah-brunner",
+   "kind": "look",
+   "name": "Mariah Brunner",
+   "also": [
+    "mariah",
+    "mariah brunner",
+    "receipts round your head"
+   ],
+   "folder": "looks/mariah-brunner",
+   "title": "Receipts Round Your Head",
+   "inspired_by": "inspired by Mariah Brunner (@itsmariahbrunner)",
+   "one_liner": "You stay on screen talking like you're on FaceTime with a friend, while the proof pops in around your head: a real screenshot, a reaction GIF, butter-yellow keywords and a numbered card, each landing on the exact word you say.",
+   "config": "reel.json",
+   "needs": [
+    "their own logos, screenshots and a reaction clip (or the editing pack)"
+   ],
+   "edits_native": "nothing extra",
+   "speed": 1.1,
+   "video_editor_max_pause": 0.3,
+   "pack": [
+    "gif",
+    "emoji",
+    "callout",
+    "sound"
+   ],
+   "edits_quick_recipe": null
+  },
+  {
+   "slug": "nick-saraev",
+   "kind": "look",
+   "name": "Nick Saraev",
+   "also": [
+    "nick",
+    "nick saraev",
+    "the recompose",
+    "recompose"
+   ],
+   "folder": "looks/nick-saraev",
+   "title": "The Recompose",
+   "inspired_by": "inspired by Nick Saraev (@nick_saraev)",
+   "one_liner": "The frame rearranges itself around every sentence: your face, then a split with the thing you mean, then the real proof full screen, then back to you.",
+   "config": "plan.json + proof.json (+ SRC/KEEP in cut.py)",
+   "needs": [
+    "real pages or screenshots of what they talk about"
+   ],
+   "edits_native": "the clip shrinks/moves for split and full-screen beats (SPEC keyframes)",
+   "speed": 1.1,
+   "video_editor_max_pause": 0.3,
+   "pack": [
+    "callout",
+    "sound"
+   ],
+   "edits_quick_recipe": null
+  },
+  {
+   "slug": "iman-gadzhi",
+   "kind": "look",
+   "name": "Iman Gadzhi",
+   "also": [
+    "iman",
+    "iman gadzhi",
+    "value-only motion"
+   ],
+   "folder": "looks/iman-gadzhi",
+   "title": "Value-only motion",
+   "inspired_by": "inspired by Iman Gadzhi (@imangadzhi)",
+   "one_liner": "Your face does the talking; graphics only fire on the claims, numbers and numbered steps, so every one feels like a reward.",
+   "config": "reel.json",
+   "needs": [
+    "`npx hyperframes add hw-write-title` once in the build folder (pen strokes)"
+   ],
+   "edits_native": "nothing extra; never more than 35% of the reel animated",
+   "speed": 1.1,
+   "video_editor_max_pause": 0.3,
+   "pack": [
+    "callout",
+    "sound"
+   ],
+   "edits_quick_recipe": null
+  },
+  {
+   "slug": "calm-luxury",
+   "kind": "look",
+   "name": "Calm luxury",
+   "also": [
+    "calm luxury",
+    "calm",
+    "luxury",
+    "quiet luxury"
+   ],
+   "folder": "looks/calm-luxury",
+   "title": "Calm luxury",
+   "inspired_by": "inspired by Jess Bergeron (@jkb.journal)",
+   "one_liner": "The camera never moves, only you do: one small white serif line, warm window light, hard cuts, no effects, and it loops.",
+   "config": "reel.json (+ SRC/KEEP/REFRAME in cut.py)",
+   "needs": [],
+   "edits_native": "almost everything (locked frame, one serif line, no SFX)",
+   "speed": 1.0,
+   "video_editor_max_pause": 0.9,
+   "pack": [],
+   "edits_quick_recipe": null
+  },
+  {
+   "slug": "pop-up-proof",
+   "kind": "format",
+   "name": "Pop-up proof",
+   "also": [
+    "pop-up proof",
+    "pop up proof",
+    "proof"
+   ],
+   "folder": "formats/pop-up-proof",
+   "title": "Pop-up proof",
+   "inspired_by": null,
+   "one_liner": "Your real proof pops up in white cards while the camera shrinks back to make room, with giant words behind your head and bold karaoke captions.",
+   "config": "reel.json",
+   "needs": [
+    "their own proof screenshots (never invented)",
+    "optional: the person cut-out for words behind the head"
+   ],
+   "edits_native": "the camera shrink and punch-ins",
+   "speed": 1.1,
+   "video_editor_max_pause": 0.3,
+   "pack": [
+    "gif",
+    "emoji",
+    "callout",
+    "sound"
+   ],
+   "edits_quick_recipe": "styles/pop-up-proof.md"
+  },
+  {
+   "slug": "text-over-broll",
+   "kind": "format",
+   "name": "Text over B-roll",
+   "also": [
+    "text over b-roll",
+    "text over broll",
+    "b-roll"
+   ],
+   "folder": "formats/text-over-broll",
+   "title": "Text over B-roll",
+   "inspired_by": null,
+   "one_liner": "Calm everyday footage, slowed and warm-graded, with one lowercase line written like a text to a friend.",
+   "config": "CLIPS in cut.py + LINES in build.py",
+   "needs": [
+    "1-3 steady B-roll clips (no talking)"
+   ],
+   "edits_native": "nothing extra",
+   "speed": null,
+   "video_editor_max_pause": 0.3,
+   "pack": [],
+   "edits_quick_recipe": "styles/text-over-broll.md"
+  },
+  {
+   "slug": "serialised-episode",
+   "kind": "format",
+   "name": "Serialised episode",
+   "also": [
+    "serialised episode",
+    "serialized",
+    "episode",
+    "series"
+   ],
+   "folder": "formats/serialised-episode",
+   "title": "Serialised episode",
+   "inspired_by": null,
+   "one_liner": "Same shot, same badge, same sound every time; only the number and the topic change, so viewers come back for the next one.",
+   "config": "EPISODE block in build.py + SRC/KEEP/SPEED/SCRIPT in cut.py",
+   "needs": [],
+   "edits_native": "nothing extra",
+   "speed": null,
+   "video_editor_max_pause": 0.3,
+   "pack": [
+    "gif",
+    "emoji"
+   ],
+   "edits_quick_recipe": "styles/serialised-episode.md"
+  },
+  {
+   "slug": "before-after-reveal",
+   "kind": "format",
+   "name": "Before-and-after",
+   "also": [
+    "before and after",
+    "before-and-after",
+    "before after",
+    "reveal"
+   ],
+   "folder": "formats/before-after-reveal",
+   "title": "Before-and-after reveal",
+   "inspired_by": null,
+   "one_liner": "Open on the worst version with a question, show the real fix in quick one-second beats, then flash into the result and hold.",
+   "config": "the per-take block in cut.py + REVEAL in build.py",
+   "needs": [
+    "a 'before' clip and an 'after' clip"
+   ],
+   "edits_native": "nothing extra",
+   "speed": null,
+   "video_editor_max_pause": 0.3,
+   "pack": [],
+   "edits_quick_recipe": "styles/before-after-reveal.md"
+  },
+  {
+   "slug": "pov-skit",
+   "kind": "format",
+   "name": "POV skit",
+   "also": [
+    "pov skit",
+    "pov",
+    "skit"
+   ],
+   "folder": "formats/pov-skit",
+   "title": "POV micro-skit",
+   "inspired_by": null,
+   "one_liner": "A native white-pill \"POV:\" line while you act out a moment your clients know, then one hard punch-in on your reaction.",
+   "config": "config.json",
+   "needs": [
+    "a short acted skit take"
+   ],
+   "edits_native": "nothing extra",
+   "speed": null,
+   "video_editor_max_pause": 0.3,
+   "pack": [
+    "gif",
+    "sound"
+   ],
+   "edits_quick_recipe": "styles/pov-skit.md"
+  },
+  {
+   "slug": "green-screen-proof",
+   "kind": "format",
+   "name": "Green-screen proof",
+   "also": [
+    "green-screen proof",
+    "green screen",
+    "green screen proof"
+   ],
+   "folder": "formats/green-screen-proof",
+   "title": "Green-screen proof",
+   "inspired_by": null,
+   "one_liner": "You talk in front of the real page you're reacting to, with a highlighter hook, a source chip and a red pen mark on the exact line as you say it.",
+   "config": "config.json",
+   "needs": [
+    "real web pages to screenshot (shots.py, needs Playwright)",
+    "the person cut-out (made by `hyperframes remove-background`, slow)"
+   ],
+   "edits_native": "nothing extra",
+   "speed": null,
+   "video_editor_max_pause": 0.3,
+   "pack": [
+    "gif",
+    "emoji",
+    "callout",
+    "sound"
+   ],
+   "edits_quick_recipe": "styles/green-screen-proof.md"
+  },
+  {
+   "slug": "timestamp-vlog",
+   "kind": "format",
+   "name": "Timestamp vlog",
+   "also": [
+    "timestamp vlog",
+    "vlog",
+    "day in the life"
+   ],
+   "folder": "formats/timestamp-vlog",
+   "title": "Timestamp vlog",
+   "inspired_by": null,
+   "one_liner": "Short clips stamped with their real recorded time in the same spot, the same swipe between every clip, a warm daylight look and a shutter on the last shot.",
+   "config": "config.json",
+   "needs": [
+    "vlog clips from through the day"
+   ],
+   "edits_native": "nothing extra",
+   "speed": null,
+   "video_editor_max_pause": 0.3,
+   "pack": [],
+   "edits_quick_recipe": "styles/timestamp-vlog.md"
+  },
+  {
+   "slug": "yes-but-split",
+   "kind": "format",
+   "name": "Yes… but",
+   "also": [
+    "yes but",
+    "yes... but",
+    "yes… but",
+    "split"
+   ],
+   "folder": "formats/yes-but-split",
+   "title": "Yes… but split",
+   "inspired_by": null,
+   "one_liner": "Top half is the dream, bottom half is the catch: meme labels, two opposite colour grades, and BUT landing a beat late with a record scratch.",
+   "config": "config.json",
+   "needs": [
+    "two clips: the 'yes' and the 'but'"
+   ],
+   "edits_native": "nothing extra",
+   "speed": null,
+   "video_editor_max_pause": 0.3,
+   "pack": [],
+   "edits_quick_recipe": "styles/yes-but-split.md"
+  }
+ ]
+}

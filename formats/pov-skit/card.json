@@ -1,0 +1,37 @@
+{
+  "slug": "pov-skit",
+  "title": "POV micro-skit",
+  "inspired_by": null,
+  "one_liner": "A native white-pill \"POV:\" line while you act out a moment your clients know, then one hard punch-in on your reaction.",
+  "best_for": "Playful personalities and service providers acting out client moments people recognise",
+  "effort": "Low",
+  "palette": [
+    {
+      "hex": "#FFFFFF",
+      "use": "POV pill, caption fill"
+    },
+    {
+      "hex": "#1A1A1A",
+      "use": "POV text"
+    },
+    {
+      "hex": "#000000",
+      "use": "caption outline"
+    }
+  ],
+  "fonts": [
+    {
+      "name": "Poppins SemiBold",
+      "google_font": "https://fonts.google.com/specimen/Poppins"
+    }
+  ],
+  "pace": "5-15 s; setup then reaction, nothing after (demo 5.0 s, reaction slowed to 0.5x)",
+  "signature_moves": [
+    "Native Instagram white-pill POV line on screen from frame 0",
+    "Hard 130% punch-in on the face for the reaction, slowed so it lands",
+    "One 3D emoji springs in beside your head, never over your face"
+  ],
+  "references": [
+    "https://www.instagram.com/hannah.shapes/reel/DcHZeQNy76e/"
+  ]
+}

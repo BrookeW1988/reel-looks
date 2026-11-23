@@ -1,0 +1,37 @@
+# How each skill uses Diary of a CEO
+
+A dark, moody podcast clip: the hook is on screen from the first frame, short captions sit under your chin, a profile card says who you are, and the last line fades to black and white.
+
+**Look:** `diary-of-a-ceo` · gallery name "Diary of a CEO" · inspired by The Diary of a CEO (@thediaryofaceo).
+Every number is in `SPEC.md`. The code is `cut.py` + `build.py` (HyperFrames). The member fills: the CLAUDE CHANGES PER TAKE blocks in cut.py and build.py.
+
+What the member brings:
+- a closed-mouth 'listening' moment from the same take (the react shot)
+
+Editing-pack extras this look takes (GIFs, emojis, callouts, sounds from the member's own pack):
+none: its SPEC bans them, so the look stays clean whatever is in the pack.
+
+## Claude Video Editor route: a finished 9:16 MP4
+
+The Video Editor does its own cut first (dead air, ums, retakes), then hands this template the editor's clean take (dead air and retakes already cut) as `assets/take.mp4`, plus its word timings under every file name the templates read (`assets/words-src.json`, `assets/whisper-words.json`, `assets/words-source.json`, `work/words-source.json`).
+
+1. `run.py start <take> --look diary-of-a-ceo` then `run.py cut <edit folder>`
+   (the editor's usual first two steps).
+2. `run.py look <edit folder>` copies this folder and `_shared/` into `<edit folder>/look/`, adds the fonts and
+   the words, and prints what to fill.
+3. Claude fills the CLAUDE CHANGES PER TAKE blocks in cut.py and build.py from SPEC.md "How a member's version differs": source = `assets/take.mp4`, keep = the whole
+   take (`[[0, <length>]]`: the editor already cut it), speed 1.1x.
+4. `run.py look <edit folder> run cut.py ...` and `run.py look <edit folder> run build.py ...` run the template with the
+   editor's Python (Mac or Linux: a stand-in for mlx_whisper in `_shared/compat/` does the words if needed).
+   Words behind the head need the person cut out: `run.py look <edit folder> cutout` (fast on a Mac).
+5. `run.py build` adds any GIFs, emojis, callouts and sounds from the member's editing pack on top, then stills to check;
+   `run.py render` renders `index.html` (the full reel, not the overlay); `run.py finish` mixes the pack sounds,
+   sets -14 LUFS and makes the contact sheet.
+
+## Instagram Edits route: an editable Edits project
+
+- **Quick:** built with Edits' own tools from this SPEC.
+  Skip what Edits can't do and say what premium would add.
+- **Premium:** run the template's overlay build (graphics only, transparent background), render it as a `.mov`
+  (`--format mov`, ProRes 4444 with alpha), then in Edits: the cut clip at 0 s, the overlay on top at 0 s, x 0.5,
+  y 0.5, scale 1.0. Edits then does natively: **three crops (1.0 / 1.2 / 1.3) switched on each join; B&W on the last line**. See `references/premium-build.md` in instagram-edits.

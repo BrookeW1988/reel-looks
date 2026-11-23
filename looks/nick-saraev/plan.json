@@ -1,0 +1,517 @@
+{
+ "_about": "One reel = one plan. Times are word refs: \"w12\" = start of word 12 in the words file, \"w12+0.3\" / \"w12-0.1\" offsets in seconds, or plain seconds. See SPEC.md for what each object and state looks like.",
+ "_note": "Example plan, not real content: every word ref (w12 = word 12 of the words file) and time here is an example value from a 23.7 s demo take. Claude rewrites beats, objects, captions and sounds from your own words-cut.json. Keep the keys and the shape.",
+ "footage": "assets/cut.mp4",
+ "_footage_note": "Your rough cut, written by cut.py (your raw take goes in cut.py's SRC). Words = cut.py's output too.",
+ "words": "assets/words-cut.json",
+ "duration": 23.7,
+ "_duration_note": "Seconds, = the length of your cut.mp4 (cut.py prints it).",
+ "accent": "#FF5A36",
+ "_accent_note": "Your ONE brand accent (from your profile). Leave it out to use BRAND_ACCENT in build.py. The hook's pale tint is mixed from it.",
+ "hook": {
+  "line1": "Your hook, line one",
+  "line2": "line two ends on",
+  "line2_em": "this.",
+  "until": "w12-0.13",
+  "_note": "line2_em = the last word of line 2, set in serif italic in your accent. 'until' = when the hook leaves."
+ },
+ "beats": [
+  {
+   "at": 0,
+   "state": "face",
+   "field": "paper",
+   "why": "claim: your opening line, on your face"
+  },
+  {
+   "at": "w12",
+   "state": "full",
+   "field": "sage",
+   "why": "a big number or idea you say: type slide, you slide out"
+  },
+  {
+   "at": "w22",
+   "state": "split",
+   "field": "paper",
+   "why": "explaining: you in the box, one object above"
+  },
+  {
+   "at": "w38",
+   "state": "full",
+   "field": "paper",
+   "why": "something to read: a real page grows to full screen"
+  },
+  {
+   "at": "w41",
+   "state": "face",
+   "field": "paper",
+   "why": "new subject: back to your face"
+  },
+  {
+   "at": "w44",
+   "state": "split",
+   "field": "paper",
+   "why": "a real definition or page beside you"
+  },
+  {
+   "at": "w50",
+   "state": "full",
+   "field": "sage",
+   "why": "the payoff: an equation built from what's on screen"
+  },
+  {
+   "at": "w56",
+   "state": "face",
+   "field": "paper",
+   "why": "reconnect: your closing line, on your face"
+  }
+ ],
+ "_beats_note": "state = face / split / full; field = paper / sage. One change every 2-3 s (SPEC.md 'Beats').",
+ "captions": {
+  "groups": [
+   [
+    0,
+    2
+   ],
+   [
+    3,
+    5
+   ],
+   [
+    6,
+    8
+   ],
+   [
+    9,
+    11
+   ],
+   [
+    22,
+    24
+   ],
+   [
+    25,
+    27
+   ],
+   [
+    28,
+    31
+   ],
+   [
+    32,
+    35
+   ],
+   [
+    36,
+    37
+   ],
+   [
+    38,
+    40
+   ],
+   [
+    41,
+    43
+   ],
+   [
+    44,
+    45
+   ],
+   [
+    46,
+    49
+   ],
+   [
+    50,
+    52
+   ],
+   [
+    53,
+    54
+   ],
+   [
+    56,
+    57
+   ],
+   [
+    58,
+    60
+   ],
+   [
+    61,
+    62
+   ],
+   [
+    63,
+    65
+   ]
+  ],
+  "keywords": [
+   "keyword",
+   "words",
+   "you",
+   "stress"
+  ],
+  "_note": "groups = [first word index, last word index], 2-4 words each. keywords = the exact caption words (with their punctuation) that turn accent, one per group at most."
+ },
+ "objects": [
+  {
+   "id": "chips1",
+   "type": "chips",
+   "logos": [
+    [
+     "your-tool",
+     "Your tool"
+    ],
+    [
+     "second-tool",
+     "Second tool"
+    ]
+   ],
+   "enter": {
+    "at": "w4",
+    "how": "pop",
+    "place": {
+     "cy": 462,
+     "scale": 0.8
+    }
+   },
+   "exit": {
+    "at": "w12-0.13",
+    "how": "blur"
+   },
+   "_note": "logos = [file name in assets/proof/ without .svg, label]. Real logos only; a missing file shows the label alone."
+  },
+  {
+   "id": "wall",
+   "type": "typewall",
+   "big": "word",
+   "big_at": "w16",
+   "sub": [
+    [
+     "a phrase",
+     "w17"
+    ],
+    [
+     "you say.",
+     "w19"
+    ]
+   ],
+   "enter": {
+    "at": "w12+0.05",
+    "how": "none"
+   },
+   "exit": {
+    "at": "w22-0.13",
+    "how": "blur"
+   },
+   "_note": "typewall: the big serif word + the sub lines are your exact spoken words, each on its own word ref."
+  },
+  {
+   "id": "list",
+   "type": "listcard",
+   "logos": [
+    [
+     "your-tool",
+     "Your tool"
+    ],
+    [
+     "second-tool",
+     "Second tool"
+    ]
+   ],
+   "rows": [
+    {
+     "text": "first point",
+     "at": "w25",
+     "mark": "tick"
+    },
+    {
+     "text": "the old way",
+     "at": "w30",
+     "mark": "strike",
+     "mark_at": "w31+0.2"
+    }
+   ],
+   "enter": {
+    "at": "w22",
+    "how": "rise",
+    "place": {
+     "cy": 530,
+     "scale": 1.0
+    }
+   },
+   "exit": {
+    "at": "w36-0.08",
+    "how": "blur"
+   },
+   "_note": "Rows are your words. mark = tick / strike / none."
+  },
+  {
+   "id": "page1",
+   "type": "pagecard",
+   "proof": "your-page",
+   "source": "example.com",
+   "marks": [
+    {
+     "mark": "a phrase on the page",
+     "at": "w37+0.15"
+    },
+    {
+     "mark": "another phrase",
+     "at": "w40"
+    }
+   ],
+   "enter": {
+    "at": "w36-0.05",
+    "how": "rise",
+    "place": {
+     "cy": 545,
+     "scale": 0.8
+    }
+   },
+   "moves": [
+    {
+     "at": "w38-0.13",
+     "place": {
+      "cy": 830,
+      "scale": 1.0
+     }
+    }
+   ],
+   "exit": {
+    "at": "w41-0.13",
+    "how": "up"
+   },
+   "_note": "proof = an id from proof.json (tools/capture_proof.py writes assets/proof/<id>.png + .json). marks = phrases on that page to highlight as you say them. If the capture is missing the card is skipped."
+  },
+  {
+   "id": "chapter",
+   "type": "word",
+   "text": "chapter",
+   "font": "serif",
+   "size": 150,
+   "halo": true,
+   "enter": {
+    "at": "w42+0.2",
+    "how": "blurin",
+    "place": {
+     "cy": 330,
+     "scale": 1.0
+    }
+   },
+   "moves": [
+    {
+     "at": "w44-0.13",
+     "place": {
+      "cy": 222,
+      "scale": 0.62
+     }
+    }
+   ],
+   "exit": {
+    "at": "w50-0.13",
+    "how": "blur"
+   },
+   "_note": "A chapter word: the new subject in your words, carried up to a small title."
+  },
+  {
+   "id": "page2",
+   "type": "pagecard",
+   "proof": "second-page",
+   "source": "example.com",
+   "marks": [
+    {
+     "mark": [
+      "the words",
+      "you say",
+      "out loud"
+     ],
+     "at": "w45"
+    }
+   ],
+   "enter": {
+    "at": "w44",
+    "how": "rise",
+    "place": {
+     "cy": 585,
+     "scale": 0.92
+    }
+   },
+   "moves": [
+    {
+     "at": "w50-0.13",
+     "place": {
+      "cy": 400,
+      "scale": 0.7
+     }
+    }
+   ],
+   "exit": {
+    "at": "w56-0.13",
+    "how": "up"
+   },
+   "_note": "proof = an id from proof.json (tools/capture_proof.py writes assets/proof/<id>.png + .json). marks = phrases on that page to highlight as you say them. If the capture is missing the card is skipped."
+  },
+  {
+   "id": "times",
+   "type": "word",
+   "text": "×",
+   "font": "sans",
+   "size": 120,
+   "enter": {
+    "at": "w51",
+    "how": "blurin",
+    "place": {
+     "cy": 720,
+     "scale": 1.0
+    }
+   },
+   "exit": {
+    "at": "w56-0.13",
+    "how": "up"
+   }
+  },
+  {
+   "id": "chips2",
+   "type": "chips",
+   "logos": [
+    [
+     "your-tool",
+     "Your tool"
+    ],
+    [
+     "second-tool",
+     "Second tool"
+    ]
+   ],
+   "enter": {
+    "at": "w52",
+    "how": "pop",
+    "place": {
+     "cy": 845,
+     "scale": 1.0
+    }
+   },
+   "exit": {
+    "at": "w56-0.13",
+    "how": "up"
+   },
+   "_note": "logos = [file name in assets/proof/ without .svg, label]. Real logos only; a missing file shows the label alone."
+  },
+  {
+   "id": "ten",
+   "type": "word",
+   "text": "2x",
+   "font": "serif",
+   "size": 330,
+   "accent": true,
+   "enter": {
+    "at": "w55",
+    "how": "slam",
+    "place": {
+     "cy": 1110,
+     "scale": 1.0
+    }
+   },
+   "exit": {
+    "at": "w56-0.13",
+    "how": "up"
+   },
+   "_note": "Only a number you actually say. No number in your take? Delete this object."
+  }
+ ],
+ "captions_off": [
+  [
+   12,
+   21
+  ],
+  [
+   55,
+   55
+  ]
+ ],
+ "_captions_off_note": "Word ranges with no captions (a type slide already shows those words).",
+ "sounds": [
+  [
+   "pop.mp3",
+   "w4+0.12",
+   "chips land (pop)"
+  ],
+  [
+   "whoosh-soft.mp3",
+   "w12+0.12",
+   "presenter out, sage floods in (fastest frame of the move)"
+  ],
+  [
+   "thud.mp3",
+   "w16+0.04",
+   "the big word lands"
+  ],
+  [
+   "paper-slide.mp3",
+   "w22+0.15",
+   "list card lands as the presenter returns"
+  ],
+  [
+   "click.mp3",
+   "w25+0.20",
+   "tick draws"
+  ],
+  [
+   "marker.mp3",
+   "w31+0.20",
+   "strike-through sweeps"
+  ],
+  [
+   "shutter.mp3",
+   "w36+0.10",
+   "real page card lands"
+  ],
+  [
+   "marker-2.mp3",
+   "w37+0.15",
+   "highlighter: first phrase"
+  ],
+  [
+   "marker.mp3",
+   "w40",
+   "highlighter: second phrase"
+  ],
+  [
+   "whoosh.mp3",
+   "w41+0.12",
+   "page whips up, face returns"
+  ],
+  [
+   "paper-slide-2.mp3",
+   "w44+0.15",
+   "second page card lands"
+  ],
+  [
+   "marker-2.mp3",
+   "w45",
+   "highlighter: the definition"
+  ],
+  [
+   "whoosh-soft.mp3",
+   "w50+0.12",
+   "presenter out, equation slide"
+  ],
+  [
+   "pop.mp3",
+   "w52+0.12",
+   "logo chips land"
+  ],
+  [
+   "boom.mp3",
+   "w55+0.03",
+   "the number slams (the payoff, once)"
+  ],
+  [
+   "whoosh.mp3",
+   "w56+0.12",
+   "equation whips up, face returns"
+  ]
+ ],
+ "_sounds_note": "[file in assets/sfx/, word ref, why]. SFX aren't shipped: missing files (or files not measured in assets/sfx/peaks.txt) are skipped, and you can add sounds natively in Edits instead."
+}

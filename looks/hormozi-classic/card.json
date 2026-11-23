@@ -1,0 +1,38 @@
+{
+  "slug": "hormozi-classic",
+  "title": "Bold Word Pop",
+  "inspired_by": "inspired by Alex Hormozi (@hormozi)",
+  "one_liner": "Huge all-caps captions with the spoken word lit up, a punch-in every second or two, zero dead air, no music.",
+  "best_for": "Direct, high-energy teaching to camera: money, mindset, 'here's why' lists. One take, plain background, 15-45 s.",
+  "effort": "low",
+  "palette": [
+    {
+      "hex": "#FFFFFF",
+      "use": "caption and hook fill"
+    },
+    {
+      "hex": "#000000",
+      "use": "10 px caption outline and shadow"
+    },
+    {
+      "hex": "#FFE600",
+      "use": "the word being spoken, the hook's accent word"
+    }
+  ],
+  "fonts": [
+    {
+      "name": "Montserrat Black (900)",
+      "google_font": "https://fonts.google.com/specimen/Montserrat"
+    }
+  ],
+  "pace": "1.2x speed, every pause cut, a hard punch-in change every 0.6-2.3 s (1.00 / 1.18, one 1.30), captions of 1-3 words",
+  "signature_moves": [
+    "All-caps Montserrat Black captions, white with a thick black outline, the spoken word turning yellow and popping 110% -> 100%",
+    "Hard punch-ins alternating 100% / 118% on phrase changes and hiding the jump cuts, with ONE 130% on the biggest line",
+    "Voice only: no music, no transitions, one whoosh on the big punch-in"
+  ],
+  "references": [
+    "https://www.instagram.com/hormozi/"
+  ],
+  "references_note": "His classic 2022-23 caption look; his current reels look different (see hormozi-2026). The classic recipe comes from public breakdowns cited in SPEC.md."
+}

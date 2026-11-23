@@ -1,0 +1,35 @@
+{
+  "_note": "Everything a member changes lives here. Times are SOURCE seconds in segments (the numbers below are example values: Claude sets them per take at real pauses); every other moment is a spoken phrase (matched in assets/words-cut.json), so the look re-times itself to a new take. Run cut.py, then build.py. Rule of the look: never two extras (card, sticker, big zoom) on screen at once; build.py refuses overlaps.",
+  "speed": 1.3,
+  "voice_lufs": -14,
+  "_segments_note": "One object per take. src = your SDR take; keep = [start, end] spans in source seconds; shift_px slides the take down (0 here); grade is optional.",
+  "segments": [
+    {"src": "~/Movies/Edits-inbox/your-take.mov", "keep": [[0.5, 6.0], [6.5, 20.7]], "shift_px": 0,
+     "grade": {"contrast": 0.05, "saturation": 0.05}}
+  ],
+  "_word_fixes_note": "Words whisper mishears in YOUR take, e.g. {\"Kanva\": \"Canva\"}. Phrase keys work across words.",
+  "word_fixes": {},
+
+  "_hook_note": "2 lines, 5-9 words, one emoji at most (never a rocket). until = the first word you say AFTER your spoken hook.",
+  "hook": {
+    "lines": ["Your hook, line one", "and line two 🤯"],
+    "until": "a phrase you say"
+  },
+  "_list_cards_note": "Optional. A numbered label when you say a numbered point out loud: number + the label you say. from / until = spoken phrases. side = left or right.",
+  "list_cards": [
+    {"number": "01", "label": "Your point", "from": "a phrase you say", "until": "the next phrase", "side": "left"}
+  ],
+  "_stickers_note": "Optional, and only with YOUR own art: sprite = a folder in assets/sprites/ holding f0.png, f1.png ... (frames = how many). partner = an optional second sprite beside it. sound = typing, pop or thud (or leave it out). corner = left or right. No art in assets/sprites/ = the sticker is skipped (use Edits' GIF library instead).",
+  "stickers": [
+    {"sprite": "your-sticker", "frames": 2, "fps": 6, "from": "a phrase you say", "until": "the next phrase", "corner": "right",
+     "sound": "pop"}
+  ],
+  "_zooms_note": "Hard punch-ins on your big lines: at / to = spoken phrases, scale 1.12 (small) or 1.25 (big). sound is optional (thud).",
+  "zooms": [
+    {"at": "a big line", "to": "the next phrase", "scale": 1.12},
+    {"at": "your biggest line", "to": "the next phrase", "scale": 1.25, "sound": "thud"}
+  ],
+  "_keywords_note": "Words that may turn the accent colour in a caption (the first one in each caption group wins).",
+  "keywords": ["a-word-you-stress", "another-word"],
+  "captions": {"max_words": 3, "max_chars": 16}
+}

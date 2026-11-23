@@ -1,0 +1,12 @@
+{
+  "_why": "Everything a member's version changes. Clips in time order. `when` = the clip's RECORDED time from its file metadata (com.apple.quicktime.creationdate), printed by cut.py, never made up. Times in media seconds.",
+  "_note": "Example values: the file names, windows (media_start, dur), times and labels below only show the shape. Replace them with the member's own clips and the recorded times cut.py prints. `shutter_at` (seconds into the LAST clip) is optional: it adds the white flash + shutter on the final result.",
+  "title": "your title, lowercase",
+  "swipe_frames": 6,
+  "clips": [
+    {"src": "~/Movies/Edits-inbox/your-clip-1.mov", "media_start": 0.0, "dur": 2.8, "when": "13 nov · 9:26 am", "label": "what you're doing"},
+    {"src": "~/Movies/Edits-inbox/your-clip-2.mov", "media_start": 0.9, "dur": 2.3, "when": "13 nov · 9:26 am", "label": "the next bit"},
+    {"src": "~/Movies/Edits-inbox/your-clip-3.mov", "media_start": 2.8, "dur": 2.2, "when": "13 nov · 9:26 am", "label": "and the next"},
+    {"src": "~/Movies/Edits-inbox/your-clip-4.mov", "media_start": 0.0, "dur": 3.9, "when": "19 nov · 9:38 am", "label": "the final result", "shutter_at": 2.6}
+  ]
+}

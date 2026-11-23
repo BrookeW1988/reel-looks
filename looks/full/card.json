@@ -1,0 +1,43 @@
+{
+  "slug": "full",
+  "title": "Full",
+  "inspired_by": "a busier version of Just you",
+  "one_liner": "Just you, turned up: punch-ins, a numbered list card, accent keywords and (optional) stickers of your own art, one at a time.",
+  "best_for": "Hot takes, stories, numbered lists and big-reaction lines",
+  "effort": "medium",
+  "palette": [
+    {
+      "hex": "#FFFFFF",
+      "use": "hook boxes, list label, caption text"
+    },
+    {
+      "hex": "#000000",
+      "use": "hook and label text"
+    },
+    {
+      "hex": "#141414",
+      "use": "brand ink (yours): caption box, hard shadows"
+    },
+    {
+      "hex": "#FF5A36",
+      "use": "brand accent (yours): one keyword per caption, list number tile"
+    }
+  ],
+  "fonts": [
+    {
+      "name": "SF Pro (hook, copied from your Mac; Inter ExtraBold if it's not there)",
+      "google_font": "Inter"
+    },
+    {
+      "name": "Your brand font for captions (default Inter ExtraBold)",
+      "google_font": "Inter"
+    }
+  ],
+  "pace": "1.3x speed, a visual change every 0.7-2.6 s, 4 hard punch-ins (112%/125%), 1 list card, 2 stickers in the 15 s demo",
+  "signature_moves": [
+    "Hard 112%/125% punch-ins on the big lines",
+    "Accent-number list card that whips in on a numbered point",
+    "One accent-coloured keyword per caption, popping word by word"
+  ],
+  "references": []
+}

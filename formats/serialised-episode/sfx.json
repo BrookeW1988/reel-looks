@@ -1,0 +1,13 @@
+{
+ "voice": "assets/cut.mp4",
+ "sfx": [
+  {
+   "id": "signature",
+   "file": "assets/sfx/signature-stamp.mp3",
+   "start": 0.153,
+   "gain": 0.78,
+   "offset": 0,
+   "slot": 0.2
+  }
+ ]
+}

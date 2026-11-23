@@ -1,0 +1,49 @@
+{
+  "slug": "codie-sanchez",
+  "title": "Studio editorial",
+  "inspired_by": "inspired by Codie Sanchez (@codiesanchez)",
+  "one_liner": "Quiet, expensive founder look: a bold serif lead-in over a light sans line that types on as you speak, a warm grade, hard cuts between two framings and a soft music bed. Nothing bounces.",
+  "best_for": "Opinion pieces, stories and 'here's what I've learned' talking heads where you want to look like an authority, not a meme page. Seated, calm delivery; 15-60 s.",
+  "effort": "Medium. Film seated with your chest in shot and a lamp behind you; Claude cuts the pauses, times every caption word to your voice and builds the transparent caption overlay. You add the music in Edits.",
+  "palette": [
+    {
+      "hex": "#FFFFFF",
+      "use": "every caption word (no colour highlights, ever)"
+    },
+    {
+      "hex": "#000000",
+      "use": "soft glow behind the captions at 45%, blur 24 px, so white reads over skin and hands"
+    },
+    {
+      "hex": "#0F0A0B",
+      "use": "deepest shadows in the grade: soft, never pure black"
+    },
+    {
+      "hex": "#CD8B76",
+      "use": "skin target for the warm grade"
+    }
+  ],
+  "fonts": [
+    {
+      "name": "EB Garamond",
+      "google_font": "https://fonts.google.com/specimen/EB+Garamond"
+    },
+    {
+      "name": "Montserrat",
+      "google_font": "https://fonts.google.com/specimen/Montserrat"
+    }
+  ],
+  "pace": "1.0x speed, pauses trimmed tight, a hard cut every ~2.2 s (23.5 a minute) on phrase breaks, a new caption screen every ~1.6 s, the payoff line held to the last frame",
+  "signature_moves": [
+    "Two-font caption: bold book-serif lead-in (1-4 words) over a light sans line whose words cut on exactly as they're spoken, white with a soft glow, at chest height",
+    "Two 'cameras' from one phone: full frame and a 1.18x punch-in, alternated with hard cuts on phrase breaks, never a transition or a creeping zoom",
+    "Ends on a payoff line: serif with the key words in italic and underlined, the only thing that animates (a short motion-blur slide), then the video just stops"
+  ],
+  "references": [
+    "https://www.instagram.com/reel/Df5GcrejBwz/",
+    "https://www.instagram.com/reel/Df2hp5vDDtW/",
+    "https://www.instagram.com/reel/DgAZnBBE_fx/",
+    "https://www.instagram.com/reel/Df2GNd4E33w/",
+    "https://www.instagram.com/reel/Df7hmmCgRwd/"
+  ]
+}

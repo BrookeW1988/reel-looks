@@ -1,0 +1,45 @@
+{
+  "slug": "before-after-reveal",
+  "title": "Before-and-after reveal",
+  "inspired_by": null,
+  "one_liner": "Open on the worst version with a question, show the real fix in quick one-second beats, then flash into the result and hold.",
+  "best_for": "Visible transformations: product brands, stylists, organisers, designers, renovators, editors.",
+  "effort": "Medium",
+  "palette": [
+    {
+      "hex": "#111111",
+      "use": "question pill, BEFORE plate (at 80%), caption outline"
+    },
+    {
+      "hex": "#FFFFFF",
+      "use": "label and caption text, the reveal flash"
+    },
+    {
+      "hex": "#F5C451",
+      "use": "AFTER plate, the one sparkle, process step titles"
+    }
+  ],
+  "fonts": [
+    {
+      "name": "Bebas Neue",
+      "google_font": "https://fonts.google.com/specimen/Bebas+Neue"
+    },
+    {
+      "name": "Inter Bold",
+      "google_font": "https://fonts.google.com/specimen/Inter"
+    },
+    {
+      "name": "JetBrains Mono (terminal card)",
+      "google_font": "https://fonts.google.com/specimen/JetBrains+Mono"
+    }
+  ],
+  "pace": "11.5 s: 4 s before, 2.6 s process (four 0.6 s beats with tactile sounds), 5 s held after",
+  "signature_moves": [
+    "A wipe starts revealing the after across your face and is cut off by a 4-frame white flash",
+    "Fast push (110% to 100%) into the warm-graded after, gold AFTER plate and one sparkle on the same beat",
+    "Process beats show the real fix (on the demo: the real command, the HDR-to-SDR switch, the real colour scopes of both files)"
+  ],
+  "references": [
+    "https://www.instagram.com/reel/DcO1EWSgTDG/"
+  ]
+}

@@ -1,0 +1,22 @@
+# Build leftovers, in case a template is ever run inside this folder.
+# Media never belongs here: every template's assets/ (footage, fonts, sounds, screenshots) is made per build.
+__pycache__/
+*.pyc
+node_modules/
+.hyperframes/
+renders/
+assets/
+overlay/
+overlays/
+_overlay/
+index.html
+*.mp4
+*.mov
+*.webm
+*.mp3
+*.wav
+*.m4a
+*.ttf
+*.otf
+.DS_Store
+.env

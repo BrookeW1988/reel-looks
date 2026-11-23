@@ -1,0 +1,46 @@
+{
+  "slug": "nana-del-rey",
+  "title": "Soft Cinema",
+  "inspired_by": "inspired by Nana DelRey (@nanadelrey)",
+  "one_liner": "Slow, warm and filmic: giant butter-yellow words build word by word behind your head, and thin cream lowercase subtitles fill the air above you, left to right.",
+  "best_for": "Calm talking heads with one big idea: a lesson, a belief, a 'here's what changed' story. Works best when there's open space above your head.",
+  "effort": "Medium: film one take, pick 2-3 phrases to go giant and one payoff word for lilac; Claude does the cut, cut-out, timings and grade.",
+  "palette": [
+    {
+      "hex": "#F8F49C",
+      "use": "butter: giant word stacks"
+    },
+    {
+      "hex": "#E4C8EC",
+      "use": "lilac: the one payoff word in a stack"
+    },
+    {
+      "hex": "#FCF4AC",
+      "use": "cream: every small subtitle"
+    },
+    {
+      "hex": "#FCF8FC",
+      "use": "white: small connector words on darker stacks"
+    }
+  ],
+  "fonts": [
+    {
+      "name": "Inter Tight 400 (subtitles), 700 (stack connectors), 800 (hero word)",
+      "google_font": "Inter Tight"
+    }
+  ],
+  "pace": "Slow: normal speed, cuts only at sentence ends (one in 18.6 s here), shots hold 4-14 s; every word hard-cuts on in one frame on its spoken syllable.",
+  "signature_moves": [
+    "Giant word stacks that build word by word above and behind the head (30-55% covered by the hair), butter with one lilac payoff word",
+    "Three-slot cream subtitles: lowercase chunks hard-cut on left, centre, right along one line, then clear together; they drop out whenever a stack is up",
+    "Warm, soft cinematic grade with a darker, quieter room behind the speaker and a soft music bed 14 dB under the voice, no sound effects"
+  ],
+  "references": [
+    "https://www.instagram.com/reel/DflIEOYqWHx/",
+    "https://www.instagram.com/reel/Dfr7sV1Au_X/",
+    "https://www.instagram.com/reel/DfpK2x1Oxy0/",
+    "https://www.instagram.com/reel/Dfhr_zLuhwi/",
+    "https://www.instagram.com/reel/Df7wuiKO9oE/",
+    "https://www.instagram.com/reel/Df0OkvFKTho/"
+  ]
+}

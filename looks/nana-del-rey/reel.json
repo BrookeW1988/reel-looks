@@ -1,0 +1,122 @@
+{
+  "_about": "Everything a member changes lives here. build.py reads it. Numbers are explained in SPEC.md.",
+  "_note": "Example config, not real content. Stack and subtitle text must be your exact spoken words in order (build.py checks them against words-cut.json and stops if they don't match). Times, y positions and shot_cuts are example values from an 18.6 s demo take: Claude sets yours.",
+  "footage": "assets/cut.mp4",
+  "cutout": "assets/cutout.webm",
+  "_cutout_note": "Made from cut.mp4 by: npx --yes hyperframes@0.9.83 remove-background assets/cut.mp4 -o assets/cutout.webm --quality best",
+  "words": "assets/words-cut.json",
+  "shot_cuts": [
+    13.62
+  ],
+  "_shot_cuts_note": "Hard cuts inside cut.mp4 on the cut clock (cut.py prints the joins).",
+  "grade_background": "grades/background.json",
+  "grade_person": "grades/person.json",
+  "bed": {
+    "src": "assets/music/your-bed.m4a",
+    "enter_at": 6.805,
+    "under_voice_db": 14,
+    "voice_lufs": -14.0,
+    "fade_in": 0.25,
+    "fade_out": 1.2,
+    "_note": "Optional, and not shipped: your own music file (one you hold the rights to). Missing = no bed; add music in the Edits window yourself (library music goes silent in Claude exports). enter_at = where in the track to start (on a downbeat)."
+  },
+  "subtitles": {
+    "size": 48,
+    "baseline_y": 480,
+    "slot_left_x": 120,
+    "slot_right_x": 960,
+    "min_gap": 40,
+    "max_chunk_words": 3
+  },
+  "stacks": [
+    {
+      "id": "open",
+      "lines": [
+        {
+          "text": "the first words",
+          "align": "left"
+        },
+        {
+          "text": "of your opening line",
+          "align": "right"
+        },
+        {
+          "text": "payoff",
+          "align": "left",
+          "hero": true
+        }
+      ],
+      "lilac": [
+        "payoff"
+      ],
+      "small_colour": "butter",
+      "hero_colour": "butter",
+      "baseline_y": 718,
+      "until": "next",
+      "_note": "lines = consecutive spoken words split into 2-3 lines; hero = the giant word; lilac = the ONE payoff word (or []). until = a later spoken word the stack holds until (leave it out to cut off on the next phrase)."
+    },
+    {
+      "id": "problem",
+      "lines": [
+        {
+          "text": "a short lead in",
+          "align": "left"
+        },
+        {
+          "text": "word",
+          "align": "center",
+          "hero": true
+        }
+      ],
+      "lilac": [],
+      "small_colour": "white",
+      "hero_colour": "butter",
+      "baseline_y": 700
+    },
+    {
+      "id": "turn",
+      "lines": [
+        {
+          "text": "a phrase",
+          "align": "right"
+        },
+        {
+          "text": "you say",
+          "align": "left"
+        },
+        {
+          "text": "big",
+          "align": "center",
+          "hero": true
+        }
+      ],
+      "lilac": [],
+      "small_colour": "butter",
+      "hero_colour": "butter",
+      "baseline_y": 695,
+      "until": "then"
+    },
+    {
+      "id": "close",
+      "lines": [
+        {
+          "text": "your closing",
+          "align": "left"
+        },
+        {
+          "text": "line",
+          "align": "center",
+          "hero": true
+        }
+      ],
+      "lilac": [
+        "line"
+      ],
+      "small_colour": "butter",
+      "hero_colour": "butter",
+      "baseline_y": 540
+    }
+  ],
+  "subtitle_lines": [],
+  "_subtitle_lines_note": "Empty = automatic line breaks. Better: Claude hand-sets them, every spoken word not in a stack, in order, as lines of 1-3 chunks, e.g. [[\"we can have\", \"a few ideas\"], [\"on the daily\"]]. Start a chunk with > to pin it to the right slot."
+}

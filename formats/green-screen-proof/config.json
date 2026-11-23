@@ -1,0 +1,55 @@
+{
+ "_why": "Everything a member's version changes lives here. cut.py, shots.py and build.py read it. Times are SOURCE seconds in the take.",
+ "_note": "All values below are placeholders / example values that show the shape. 'keep' ranges are examples: replace them with your own. This build expects exactly 3 backgrounds: bg1 = the opener (no mark), bg2 and bg3 = the pages you mark.",
+ "take": "~/Movies/Edits-inbox/your-take.mov",
+ "keep": [
+  [
+   20.86,
+   40.3
+  ],
+  [
+   43.08,
+   55.0
+  ]
+ ],
+ "speed": 1.15,
+ "source_site": "Name of the site",
+ "backgrounds": [
+  {
+   "_note": "bg1: shown from 0 s. anchor = exact text near the top of the bit to show (the page is captured from its top).",
+   "id": "bg1",
+   "url": "https://example.com/the-real-page-you-talk-about",
+   "anchor": "Exact text near the top of the page",
+   "key": null,
+   "from_word": "a phrase you say"
+  },
+  {
+   "_note": "bg2: arrives on from_word. key = exact text to mark; mark = underline | circle-each | circle; drawn on mark_word.",
+   "id": "bg2",
+   "url": "https://example.com/the-real-page-you-talk-about",
+   "anchor": "Exact text just above the line you mark",
+   "key": "the exact words to circle",
+   "mark": "circle-each",
+   "from_word": "a phrase you say",
+   "mark_word": "a word you say"
+  },
+  {
+   "id": "bg3",
+   "url": "https://example.com/the-real-page-you-talk-about",
+   "section": "Optional section name (notes only)",
+   "anchor": "Exact text just above the line you mark",
+   "key": "the exact sentence to underline",
+   "mark": "underline",
+   "from_word": "a phrase you say",
+   "mark_word": "a word you say"
+  }
+ ],
+ "_beats_note": "Words that move the page and you. pullback_word: bg3 zooms back out (null = skip). punch_word / punch_end_word: hard 1.07 punch-in on you, released on punch_end_word (null = skip).",
+ "pullback_word": "a word you say",
+ "punch_word": "a word you stress",
+ "punch_end_word": "the next sentence's first word",
+ "hook_lines": [
+  "Your hook,",
+  "line two"
+ ]
+}

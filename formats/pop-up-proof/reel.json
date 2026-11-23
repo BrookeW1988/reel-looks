@@ -1,0 +1,37 @@
+{
+  "_note": "Everything a member changes lives here. keep = SOURCE seconds in your take (the numbers below are example values from the demo take: Claude sets them per take at real pauses). Every other moment is a spoken phrase, matched in assets/words-cut.json, so the look re-times itself to a new take. Run cut.py, then build.py.",
+  "take": "~/Movies/Edits-inbox/your-take.mov",
+  "keep": [[2.0, 9.55], [9.75, 10.58], [10.95, 12.75], [12.92, 19.6]],
+  "speed": 1.1,
+  "_word_fixes_note": "Words whisper mishears in YOUR take, lower-case key -> how it should read, e.g. {\"kanva\": \"Canva\"}.",
+  "word_fixes": {},
+
+  "_hook_note": "The pill hook (3-5 words, a question works well) and an optional small typed line under it. until = the spoken word where the hook leaves (usually your first big word).",
+  "hook": {"text": "Your short hook?", "sub": "(an optional second line)", "until": "a phrase you say"},
+
+  "_big_words_note": "Optional. 1-2 giant words that slam in BEHIND your head on the words you say. at = the spoken word for each line; until = the word where they leave. Behind-the-head needs assets/cutout.webm (see SPEC.md); without it they sit over the footage. Delete this block if you don't want them.",
+  "big_words": {"lines": ["BIG", "WORDS"], "at": ["a word you say", "the next word"], "until": "the word after"},
+
+  "_proof_note": "Proof = YOUR OWN screenshots only (a real result, a real message, a real dashboard). Never mock one up. image lives in assets/cards/. label = optional short line in the chip (e.g. 'Client result'). stat = optional number to circle, exactly as it appears in your screenshot (stat_small = optional small word after it). from = the phrase where the card comes in; until = the phrase where it leaves. A card whose image isn't there is skipped.",
+  "proof_cards": [
+    {"image": "assets/cards/your-screenshot-1.png", "label": "Optional short label", "stat": "", "stat_small": "",
+     "from": "a phrase you say", "until": "the next phrase"},
+    {"image": "assets/cards/your-screenshot-2.png", "label": "", "stat": "", "stat_small": "",
+     "from": "a phrase you say", "until": "the next phrase"}
+  ],
+
+  "_chapters_note": "Optional numbered chapter stamps. from / until = spoken phrases.",
+  "chapters": [
+    {"number": "01", "label": "your chapter label", "from": "a phrase you say", "until": "the next phrase"}
+  ],
+
+  "_punches_note": "Optional hard camera punch-ins on big lines (never slow pushes): at / until = spoken phrases (until can be END), scale 1.08-1.15.",
+  "punches": [
+    {"at": "a big line", "until": "the next phrase", "scale": 1.15},
+    {"at": "your last big word", "until": "END", "scale": 1.08}
+  ],
+
+  "_keywords_note": "Words that get a slightly bigger highlight when they're said.",
+  "keywords": ["a-word-you-stress", "another-word"],
+  "captions": {"max_words": 3}
+}

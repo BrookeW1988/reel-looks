@@ -1,0 +1,49 @@
+{
+  "slug": "mariah-brunner",
+  "title": "Receipts Round Your Head",
+  "inspired_by": "inspired by Mariah Brunner (@itsmariahbrunner)",
+  "one_liner": "You stay on screen talking like you're on FaceTime with a friend, while the proof pops in around your head: a real screenshot, a reaction GIF, butter-yellow keywords and a numbered card, each landing on the exact word you say.",
+  "best_for": "Tool lists, 'here's why' and 'number one, number two' explainers, quick hot takes where you name things and react to them. Talking-head takes of 15-60 s filmed at a desk or on the couch.",
+  "effort": "Medium: about 45-60 minutes with Claude. You bring one take plus 2-4 real screenshots of what you name; Claude does the cut, word timings, cards, captions and sound.",
+  "palette": [
+    {
+      "hex": "#F8F098",
+      "use": "Butter yellow: hook lines, keyword stacks, the highlighter sweep, the pill on the numbered card"
+    },
+    {
+      "hex": "#FFFFFF",
+      "use": "White: one-word captions, the second-voice keyword lines, frames round every card and GIF"
+    },
+    {
+      "hex": "#0C0C0E",
+      "use": "Ink: the outline under every yellow/white pop, the big number, pill outline"
+    },
+    {
+      "hex": "#DCD3FA",
+      "use": "Lavender (our pick, not measured): top of the numbered card's lavender-to-white gradient"
+    }
+  ],
+  "fonts": [
+    {
+      "name": "Inter Black (900)",
+      "google_font": "Inter"
+    },
+    {
+      "name": "Inter ExtraBold (800), captions",
+      "google_font": "Inter"
+    }
+  ],
+  "pace": "Cut tight but never breathless (whole sentences, natural breaths, 1.1x). A new receipt every 1-3 s in the opening, one 2 s plain stretch of just you in the middle, then the closing keyword stack lands word by word. Soft pops and taps on every landing, one whoosh in the whole reel, no music.",
+  "signature_moves": [
+    "Receipts pop in round your head on the exact word: a real logo or screenshot lands with a small overshoot and a blur-in, then leaves when the thought changes. Your face is never covered.",
+    "Butter-yellow keyword stacks: two or three of your own words pop on one at a time, staggered left and right above your head, with a 3D emoji as the full stop.",
+    "One-word captions in clean white under your chin, plus a lavender numbered card that counts up when you say a number."
+  ],
+  "references": [
+    "https://www.instagram.com/itsmariahbrunner/",
+    "https://www.instagram.com/reel/DgAONMDuiiS/",
+    "https://www.instagram.com/reel/DgC48ScRAQG/",
+    "https://www.instagram.com/reel/DgBXF6nhzPr/",
+    "https://www.instagram.com/p/DcYpK3shSi9/"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "slug": "timestamp-vlog",
+  "title": "Timestamp vlog",
+  "inspired_by": null,
+  "one_liner": "Short clips stamped with their real recorded time in the same spot, the same swipe between every clip, a warm daylight look and a shutter on the last shot.",
+  "best_for": "Service businesses with a visible process, and \"a day (or week) in my business\"",
+  "effort": "Low",
+  "palette": [
+    {
+      "hex": "#000000",
+      "use": "timestamp chip at 60%"
+    },
+    {
+      "hex": "#FFFFFF",
+      "use": "chip text, title, shutter flash"
+    }
+  ],
+  "fonts": [
+    {
+      "name": "JetBrains Mono Medium",
+      "google_font": "https://fonts.google.com/specimen/JetBrains+Mono"
+    },
+    {
+      "name": "Instrument Serif Italic",
+      "google_font": "https://fonts.google.com/specimen/Instrument+Serif"
+    }
+  ],
+  "pace": "10-25 s; clips 1-3 s, final 3-4 s (the demo build was 10.6 s, four clips)",
+  "signature_moves": [
+    "Chip with the clip's real recorded time, never moving, words blur-swap mid-swipe",
+    "One 6-frame swipe-left on every cut, with a different soft whoosh each time",
+    "White flash + camera shutter on the final shot"
+  ],
+  "references": []
+}

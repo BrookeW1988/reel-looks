@@ -1,0 +1,57 @@
+{
+  "slug": "hormozi-2026",
+  "title": "Red Tag Desk Talk",
+  "inspired_by": "inspired by Alex Hormozi (@hormozi)",
+  "one_liner": "A red label tag for the first 4.5 s, small sentence-case captions that hard-swap, and a list card that un-redacts point by point as you say it.",
+  "best_for": "A list, ladder or framework said straight to camera ('three reasons', 'step two'), 12-40 s.",
+  "effort": "medium",
+  "palette": [
+    {
+      "hex": "#FF0000",
+      "use": "the label tag box"
+    },
+    {
+      "hex": "#FFFFFF",
+      "use": "tag text, captions, the list card"
+    },
+    {
+      "hex": "#721CFB",
+      "use": "meter fill"
+    },
+    {
+      "hex": "#E6E6EA",
+      "use": "meter track"
+    },
+    {
+      "hex": "#0B0B0D",
+      "use": "redaction bars"
+    }
+  ],
+  "fonts": [
+    {
+      "name": "Poppins (400 + 700)",
+      "google_font": "https://fonts.google.com/specimen/Poppins"
+    },
+    {
+      "name": "Montserrat Black Italic (900i)",
+      "google_font": "https://fonts.google.com/specimen/Montserrat"
+    },
+    {
+      "name": "Inter (400-800)",
+      "google_font": "https://fonts.google.com/specimen/Inter"
+    }
+  ],
+  "pace": "Word-tight cut at 1.15x (208 wpm in the demo), captions hard-swap every ~0.7 s, camera locked off with ONE +15% punch-in near the end, no music, no effects",
+  "signature_moves": [
+    "Red Montserrat Black Italic label tag above the head from frame 0, gone hard at 4.5 s",
+    "Small one-line Poppins captions, sentence case, one word in bold, hard swaps with no animation",
+    "A prop that changes on the spoken beat: a redacted list card clearing point by point plus a violet meter stepping 1/3 -> 2/3, then the prop leaves on one hard punch-in"
+  ],
+  "references": [
+    "https://www.instagram.com/reel/Df-BuaKuM1z/",
+    "https://www.instagram.com/reel/Ddii_P4BHns/",
+    "https://www.instagram.com/reel/DYGVdp0u-OI/",
+    "https://www.instagram.com/reel/DXJzl3jySxZ/",
+    "https://www.instagram.com/reel/Df-kiojO4jn/"
+  ]
+}

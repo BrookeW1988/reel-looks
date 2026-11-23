@@ -1,0 +1,84 @@
+{
+  "_readme": "Every cue for the reel. Times are 'w<N>' (start of word N in assets/words-cut.json), 'w<N>+0.1', or plain seconds. Positions are px on the 1080x1920 frame. Every value below is an EXAMPLE showing the shape: Claude fills it from the member's own take and files before each build. The demo take's face lived in x 330-1000, y 560-1500: find the member's own face box first and keep every graphic out of it (SPEC.md 'Safe zones').",
+  "footage": "assets/cut.mp4",
+  "words": "assets/words-cut.json",
+  "_keep_case_note": "Words that keep their capitals in the lower-case captions (acronyms, names).",
+  "keep_case": ["AI"],
+  "caption_y": 1545,
+
+  "_hook_note": "On screen from frame 0, 2-3 short Title Case lines in the member's own words. color: yellow | white.",
+  "hook": {
+    "out": "w8+0.08",
+    "x": 72, "y": 250, "size": 86,
+    "lines": [
+      {"text": "Your Hook?", "color": "yellow"},
+      {"text": "Line Two", "color": "yellow"},
+      {"text": "Line Three.", "color": "white"}
+    ]
+  },
+
+  "_media_note": "Every src below is the member's OWN file (real logo, real screenshot, real reaction GIF as a short .mp4, 3D emoji PNG). Not shipped: a cue whose file is missing is skipped. Never mock up UI or invent numbers.",
+  "tiles": [
+    {"id": "logo", "src": "assets/img/your-logo.svg", "at": "w4", "out": "w8+0.08", "x": 836, "y": 258, "size": 164, "rot": 6}
+  ],
+
+  "_cards_note": "highlights = [x, y, w, h] boxes (px inside the card) for the highlighter sweep, measured on HER screenshot. Example values.",
+  "cards": [
+    {"id": "shot1", "src": "assets/cards/your-screenshot.png", "at": "w8", "out": "w16-0.2", "exit": "up",
+     "x": 240, "y": 204, "w": 600, "rot": -2},
+    {"id": "shot2", "src": "assets/cards/your-second-screenshot.png", "at": "w25", "out": "w37-0.22", "exit": "down",
+     "x": 92, "y": 198, "w": 500, "rot": 1.5,
+     "highlight_at": "w30",
+     "highlights": [[22, 186, 280, 42], [20, 266, 440, 42], [20, 345, 250, 42]]}
+  ],
+
+  "gifs": [
+    {"id": "reaction", "src": "assets/gif/your-reaction.mp4", "at": "w37", "out": "w41-0.1",
+     "x": 76, "y": 206, "w": 560, "h": 350, "rot": -3}
+  ],
+
+  "_stacks_note": "Keyword stacks: 2-4 of the member's own words, each popping on as she says it (at = that word). A 3D emoji as the full stop.",
+  "stacks": [
+    {"id": "stack1", "out": "w24",
+     "words": [
+       {"text": "Keyword", "at": "w16", "color": "yellow", "size": 118, "x": 72, "y": 212},
+       {"text": "of", "at": "w17", "color": "white", "size": 70, "x": 548, "y": 362},
+       {"text": "Word", "at": "w18", "color": "yellow", "size": 118, "x": 640, "y": 324},
+       {"text": "a phrase you say", "at": "w19", "color": "white", "size": 70, "x": 72, "y": 490}
+     ],
+     "emoji": {"src": "assets/img/your-emoji.png", "at": "w18", "x": 350, "y": 336, "size": 150, "rot": -10}},
+    {"id": "stack2", "out": "end",
+     "words": [
+       {"text": "Small", "at": "w55", "color": "white", "size": 78, "x": 72, "y": 214},
+       {"text": "Big Word", "at": "w56", "color": "yellow", "size": 142, "x": 72, "y": 292},
+       {"text": "Small Again", "at": "w57", "color": "white", "size": 78, "x": 470, "y": 458}
+     ],
+     "emoji": {"src": "assets/img/your-second-emoji.png", "at": "w61", "x": 836, "y": 290, "size": 150, "rot": 8}}
+  ],
+
+  "_numcard_note": "Only for a number the member actually SAYS. number = that number, label = the word after it, pill = a phrase she says, pill_at = when.",
+  "numcard": {"id": "number", "at": "w47", "out": "w53+0.38", "x": 170, "y": 206, "w": 720, "h": 330,
+              "number": 100, "label": "things", "pill": "a phrase you say", "pill_at": "w50"},
+
+  "camera": [
+    {"at": "w40", "scale": 1.10, "_why": "hard punch on the punchline word"},
+    {"at": "w41", "scale": 1.0},
+    {"at": "w54", "scale": 1.07, "_why": "jump cut into the last line: the punch hides the cut"}
+  ],
+
+  "_sfx_note": "file = a sound in assets/sfx/ (not shipped: missing files are skipped, add them in Edits instead). peak = seconds into YOUR file where it's loudest (measure with npx --yes hyperframes@0.9.83 audio --json); these peaks are the demo files'. vol = demo volumes, re-measure with measure_audio.py.",
+  "sfx": [
+    {"file": "pop-1.mp3",          "at": "w4",  "peak": 0.007, "vol": 0.82, "dur": 0.6,  "_on": "logo tile lands"},
+    {"file": "paper-slide-1.mp3",  "at": "w8",  "peak": 0.117, "vol": 0.30, "dur": 0.58, "_on": "first card lands"},
+    {"file": "click-soft.mp3",     "at": "w16", "peak": 0.001, "vol": 1.00, "dur": 0.45, "_on": "first stack word taps in"},
+    {"file": "bubble-pop.mp3",     "at": "w18", "peak": 0.010, "vol": 0.66, "dur": 0.6,  "_on": "emoji + hero word"},
+    {"file": "paper-slide-2.mp3",  "at": "w25", "peak": 0.580, "vol": 0.35, "dur": 1.2,  "_on": "second card lands"},
+    {"file": "marker.mp3",         "at": "w30", "peak": 0.012, "vol": 1.80, "dur": 0.5,  "_on": "highlighter sweeps the rows"},
+    {"file": "soft-thud.mp3",      "at": "w37", "peak": 0.000, "vol": 0.42, "dur": 0.45, "_on": "reaction GIF lands"},
+    {"file": "pop-2.mp3",          "at": "w47", "peak": 0.006, "vol": 0.47, "dur": 0.45, "_on": "number card lands"},
+    {"file": "click-soft.mp3",     "at": "w50", "peak": 0.001, "vol": 1.00, "dur": 0.45, "_on": "pill taps in"},
+    {"file": "swipe.mp3",          "at": "w53+0.34", "peak": 0.168, "vol": 0.48, "dur": 0.7, "_on": "number card swipes out (fastest frame); the only whoosh"},
+    {"file": "pop-1.mp3",          "at": "w56", "peak": 0.007, "vol": 0.82, "dur": 0.6,  "_on": "big closing word lands"},
+    {"file": "bubble-pop.mp3",     "at": "w61", "peak": 0.010, "vol": 0.66, "dur": 0.6,  "_on": "closing emoji"}
+  ]
+}
